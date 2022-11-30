@@ -1,4 +1,4 @@
-equire "open-uri"
+require "open-uri"
 
 # # # # # # # # # # #  USER DATABASE TEST HERE # # # # # # # # # # #
 
