@@ -2,21 +2,21 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home, :index, :show ]
 
   def home
-    @surveys = Survey.all
+    @homepages = Homepage.all
   end
 
   def index
-    @surveys = Survey.all
+    @homepages = Homepage.all
   end
 
   def show
-    @survey = Survey.find(params[:id])
+    @homepage = Homepage.find(params[:id])
     @devise = Devise.new
   end
 
   private
 
-  def survey_params
+  def homepage_params
     params.require(:survey.permit(:user_id))
   end
 end
