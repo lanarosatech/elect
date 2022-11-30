@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= content_for(:navbar_class, "navbar-home") %>
+
+<div class="banner">
+  <div class="backgroud-image">
+    <div class="banner-content text-center">
+      <%= link_to "Get Started", new_user_session_path, class: "btn btn-lg btn-primary" %>
+    </div>
+  </div>
+</div>

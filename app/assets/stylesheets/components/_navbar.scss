@@ -10,3 +10,31 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+
+.nav.link {
+  position: absolute;
+  width: 198px;
+  height: 20px;
+  left: 1245px;
+  top: 38px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+  /* identical to box height, or 83% */
+
+  color: #FFFFFF;
+}
+
+.container-fluid {
+  position: absolute;
+  width: 1512px;
+  height: 100px;
+  left: 0px;
+  top: 2px;
+
+  background: #2C3639;
+}

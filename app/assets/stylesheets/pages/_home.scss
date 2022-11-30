@@ -1,1 +1,33 @@
 // Specific CSS for your home-page
+
+/* HOME ... / */
+.banner-content.text-center {
+  position: relative;
+  background: #DCD7C9;
+}
+
+// /* multiethnic-group-of-hands-raised(1) 1 */
+
+.backgroud-image {
+  position: absolute;
+}
+
+// /* Get started */
+
+.btn.btn-lg.btn-primary {
+  position: absolute;
+  width: 344px;
+  height: 88px;
+  left: 584px;
+  top: 447px;
+  background: #3F4E4F;
+  border-radius: 10px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 20px;
+  text-decoration-color: #F2F0EB;
+  text-size-adjust: relative;
+}
