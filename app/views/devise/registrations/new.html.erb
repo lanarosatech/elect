@@ -1,9 +1,15 @@
-<h2>Sign up</h2>
+<div class="container" style="width: 45%;">
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
   <%= f.error_notification %>
 
+  <div class="simple_form_for">
+
   <div class="form-inputs">
+    <%= f.input :name,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "name:" }%>
     <%= f.input :email,
                 required: true,
                 autofocus: true,
@@ -16,10 +22,12 @@
                 required: true,
                 input_html: { autocomplete: "new-password" } %>
   </div>
+  </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, "Sign up", class: "btn btn-outline-primary", id: "custom-btn" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
