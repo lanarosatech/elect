@@ -7,17 +7,26 @@ class UsersController < ApplicationController
 
   def show
     @users = User.find(params[:id])
-    @devise = Devise.new
   end
 
   # redirect to views/users/list_candidates where we have all candidates profiles from a user_id
+
   def list_candidates
-    @users = current_user.users
+    @candidates = user.all.candidates
+    if user.find(candidates_params[:id])
+      return
+    else
+      redirect_to home_page_path
+    end
   end
 
   private
 
-  def user_params
+  def candidates_params
     params.require(:user).permit(:id, :name, :role, :state, :party, :email, :photo)
+  end
+
+  def user_params
+    params.require(:user).permit(:id, :name, :state, :email)
   end
 end

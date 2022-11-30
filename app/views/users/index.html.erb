@@ -1,0 +1,30 @@
+<%= content_for(:navbar_class, "navbar-home") %>
+
+<div class="banner" style="background: #DCD7C9">
+  <div class="container">
+
+    <h1 class="title">Search through all candidates profiles</h1>
+
+      <%if current_user.role != "Deputado Federal" %>
+        <% @users.each do |user| %>
+          <%if user.role == "Deputado Federal" %>
+              <div class="row">
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img src= "..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= user.name %></h5>
+                        <p class="card-text"><%= user.party %></p>
+                        <p class="card-text"><%= user.role %></p>
+                        <p class="card-text"><%= "Priority: Something" %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <%end %>
+        <%end %>
+      <%end %>
+  </div>
+</div>
+
+<%= render "shared/footer" %>
