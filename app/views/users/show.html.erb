@@ -1,0 +1,77 @@
+<div class="master-container pt-1 pb-1" style="background-color: #F2F0EB;">
+  <div class="container mt-5 mb-5">
+    <div class="row wing-info">
+        <div class="col-7 wing-description">
+          <h2 class="pt-4 pb-5">According to your answers, we understand that...</h2>
+          <h4 class="pt-4 pb-5">You're inclined to left-wing politics!</h4>
+          <div class="row text-center py-0">
+              <div class="col-4 pt-2 pb-2">
+                <i class="fa-solid fa-users fa-3x alig"></i>
+              </div>
+              <div class="col-4 pt-2 pb-2">
+                <i class="fa-solid fa-users fa-3x"></i>
+              </div>
+              <div class="col-4 pt-2 pb-2">
+                <i class="fa-solid fa-users fa-3x"></i>
+              </div>
+          </div>
+          <div class="row position-icons d-flex justify-content-center py-0">
+              <div class="col-4">
+                <h5 class="text-center pt-2">Left-wing</h5>
+              </div>
+              <div class="col-4">
+                <h5 class="text-center pt-2">Center</h5>
+              </div>
+              <div class="col-4">
+                <h5 class="text-center pt-2">Right</h5>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8 mt-4 pt-3">
+          <h2 class="pb-4 pt-3">Your main priorities include...</h2>
+          <ol class="priority-list mt-4">
+            <h4><li>Education</li></h4>
+            <h4><li>Social equality</li></h4>
+            <h4><li>Public safety</li></h4>
+          </ol>
+          <a><%= link_to "Check candidates that match your profile", "#", class: "btn btn-flat mb-2 mt-2" %></a>
+        </div>
+        <div class="col-4 mt-5 shadow-lg p-3 mb-5 bg-light rounded-4" style="border: 1px solid black;">
+            <div class="class row align-items-center px-4 my-3">
+              <div class="col-12">
+                <h5 class="share-question py-0 my-0">Would you like to share your profile?</h5>
+              </div>
+            </div>
+            <div class="row align-items-center px-4 my-4">
+              <div class="col-2 me-2">
+                <i class="fa-solid fa-envelope fa-4x" style="color: grey;"></i>
+              </div>
+              <div class="col-2 me-2">
+                <i class="fa-brands fa-square-whatsapp fa-4x" style="color: #39bd00;"></i>
+              </div>
+              <div class="col-2 me-2">
+                <i class="fa-brands fa-square-facebook fa-4x" style="color: #00239F;"></i>
+              </div>
+              <div class="col-2 me-2">
+                <i class="fa-brands fa-square-twitter fa-4x" style="color: #3284FF;"></i>
+              </div>
+            </div>
+            <div class="class row align-items-center px-4 my-4">
+              <div class="col-12 align-items-center">
+                <p class="copy-text my-0 py-0">Copy your profile URL:</p>
+              </div>
+            </div>
+            <div class="row align-items-center px-4 my-3">
+              <div class="col-8 pe-0">
+                <input type="text" style="width: 100%;" value="localhost:3000/users/2" id="myInput">
+              </div>
+              <div class="col-4 my-0 py-0">
+                <a id="btnCopy" onclick="myFunction()"><%= link_to "Copy", "#", class: "btn btn-flat" %></a>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
