@@ -5,3 +5,30 @@
 @import "navbar";
 @import "devise";
 @import "footer";
+
+.title {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+  display: inline-table;
+}
+
+.col {
+  float: left;
+  width: 10%;
+  padding: 0 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: #f1f1f1;
+  border-radius: 15px 15px 15px 15px;
+  border: 0.5px solid #000000;
+  background: #FFFFFF;
+}
