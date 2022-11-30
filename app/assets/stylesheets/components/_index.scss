@@ -3,13 +3,14 @@
 @import "avatar";
 @import "form_legend_clear";
 @import "navbar";
+@import "button";
 @import "devise";
 @import "footer";
+
 
 .title {
   font-family: 'Montserrat';
   text-align: center;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -45,7 +46,7 @@
 // # # #  FORMS DE PESQUISA # # #
 
 .search-form-control {
-  // position: relative;
+  position: relative;
 }
 
 .search-form-control .btn {

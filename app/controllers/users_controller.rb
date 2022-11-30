@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+<<<<<<< HEAD
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
@@ -28,5 +29,9 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:id, :name, :state, :email)
+=======
+  def show
+    @user = User.find(params[:id])
+>>>>>>> main
   end
 end
