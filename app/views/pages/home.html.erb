@@ -1,9 +1,12 @@
 <%= content_for(:navbar_class, "navbar-home") %>
 
-<div class="banner">
-  <div class="backgroud-image">
-    <div class="banner-content text-center">
-      <%= link_to "Get Started", new_user_session_path, class: "btn btn-lg btn-primary" %>
+
+<div class="home-banner"  style="background-image: linear-gradient(-225deg, rgba(0,71,198,0.1) 0%, rgba(0,36,61,0.1) 93%), url(<%= image_path 'background-img-elect.jpg' %>);">
+  <div class="home-container">
+    <div class="home-btn">
+    <p>  <%= link_to "Get Started", new_user_session_path, class: "btn btn-lg btn-primary" %> </p>
     </div>
   </div>
 </div>
+
+<%= render "shared/footer" %>

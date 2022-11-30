@@ -1,33 +1,35 @@
-// Specific CSS for your home-page
-
-/* HOME ... / */
-.banner-content.text-center {
-  position: relative;
-  background: #DCD7C9;
+.home-banner {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-size: cover;
 }
 
-// /* multiethnic-group-of-hands-raised(1) 1 */
+.home-container {
+  h1 {
+  color: white;
+  // font-size: 80px;
+  // font-weight: bolder;
+  // text-shadow: 2px 2px 4px black;
+  }
 
-.backgroud-image {
-  position: absolute;
+  p {
+  color: white ;
+  margin-top: 2rem;
+  font-size: 10px;
+  font-weight: medium;
+  text-shadow: none;
+  }
 }
 
 // /* Get started */
 
 .btn.btn-lg.btn-primary {
-  position: absolute;
-  width: 344px;
-  height: 88px;
-  left: 584px;
-  top: 447px;
+  // width: 344px;
+  // height: 88px;
+  padding: 35px 60px;
   background: #3F4E4F;
   border-radius: 10px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 20px;
-  text-decoration-color: #F2F0EB;
-  text-size-adjust: relative;
+  text-align: center;
 }

@@ -1,47 +1,33 @@
 /* Footer */
 
-.footer-container {
-  position: absolute;
-  width: 1512px;
-  height: 100px;
-  left: 0px;
-  top: 880px;
-
+.footer {
   background: #2C3639;
-}
-
-.address {
-  position: absolute;
-  left: 3.7%;
-  right: 58%;
-  top: 24%;
-  bottom: 24%;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 20px;
-  /* or 100% */
+  color: #b0b1b5
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
   color: #FFFFFF;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0px 10px;
 }
-
-.footer-links{
-  position: absolute;
-  left: 81.81%;
-  right: 16.34%;
-  top: 36%;
-  bottom: 36%;
-
-  background: #FFFFFF;
+.footer-links a:hover {
+  opacity: 1;
 }
-
-.fa-brands.fa-instagram, .fa-brands.fa-twitter, .fa-brands.fa-facebook, .fa-brands.fa-linkedin {
-  position: absolute;
-  left: 85.71%;
-  right: 12.24%;
-  top: 37%;
-  bottom: 37%;
-
-  background: #FFFFFF;
+.footer .fa-heart {
+  color: #FFFFFF;
 }
