@@ -12,9 +12,9 @@ kim = User.create!(name: "Kim Kardashian", state: "Rio de Janeiro", role: "", pa
 
 # # # # # # # # # # CANDIDATES DATABASE HERE # # # # # # # # # # #
 
-avril = User.create!(name: "Carla Queen", state: "Rio de Janeiro", role: "Deputado Federal", party: "Psol", email: "carla@gmail.com", password: "123456")
-john = User.create!(name: "Julinha do Futvolei", state: "Rio de Janeiro", role: "Deputado Federal", party: "PT", email: "julinha@gmail.com", password: "123456")
-felipe = User.create!(name: "Felipe", state: "Rio de Janeiro", role: "Deputado Federal", party: "PT", email: "renato@gmail.com", password: "123456")
-andre = User.create!(name: "André Menezes", state: "Rio de Janeiro", role: "Deputado Federal", party: "PT", email: "johntravolta@gmail.com", password: "123456")
-davi = User.create!(name: "El Flamenguista", state: "Rio de Janeiro", role: "Deputado Federal", party: "PT", email: "davi@gmail.com", password: "123456")
+carla = User.create!(name: "Carla", state: "Rio de Janeiro", role: "Deputado Federal", party: "Psol", email: "carla@gmail.com", password: "123456", race: "white", genre: "feminine")
+julia = User.create!(name: "Julia", state: "Rio de Janeiro", role: "Deputado Federal", party: "PT", email: "julinha@gmail.com", password: "123456", race: "white", genre: "feminine")
+felipe = User.create!(name: "Felipe", state: "Rio de Janeiro", role: "Deputado Federal", party: "PT", email: "renato@gmail.com", password: "123456", race: "white", genre: "masculine")
+andre = User.create!(name: "André", state: "Rio de Janeiro", role: "Deputado Federal", party: "PT", email: "johntravolta@gmail.com", password: "123456", race: "white", genre: "masculine")
+davi = User.create!(name: "Davi", state: "Rio de Janeiro", role: "Deputado Federal", party: "PT", email: "davi@gmail.com", password: "123456", race: "white", genre: "masculine")
 puts "Finished!"

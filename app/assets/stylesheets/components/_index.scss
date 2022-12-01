@@ -19,8 +19,9 @@
 // # # # CARDS # # #
 
 .row {
-  margin: 0 -5px;
+  margin: auto;
   display: inline-table;
+  padding: 10px;
 }
 
 .col {
@@ -42,6 +43,7 @@
   font-weight: 100;
   font-size: 17px;
 }
+
 
 // # # #  FORMS DE PESQUISA # # #
 
