@@ -10,12 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2022_12_01_193312) do
-=======
-ActiveRecord::Schema[7.0].define(version: 2022_12_01_180310) do
-
->>>>>>> main
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -60,28 +55,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_01_180310) do
     t.string "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-<<<<<<< HEAD
-    t.index ["survey_id"], name: "index_questions_on_survey_id"
   end
 
   create_table "searches", force: :cascade do |t|
     t.string "state"
     t.string "party"
-    t.string "genre"
+    t.string "gender"
     t.string "race"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
     t.string "role"
-  end
-
-  create_table "surveys", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_surveys_on_user_id"
-=======
->>>>>>> main
   end
 
   create_table "user_answers", force: :cascade do |t|
@@ -108,7 +92,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_01_180310) do
     t.string "party"
     t.string "race"
     t.string "gender"
-
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

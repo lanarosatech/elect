@@ -11,9 +11,10 @@
       <div class="row">
               <%# <img src= "..." class="card-img-top" alt="..."> %>
         <% @search.search_user.each do |user| %>
-          <div class="col-3">
+          <div class="col-2">
             <div class="card mt-4" style="width: 9rem;">
-              <%= image_tag "profile.png" %>
+              <img>
+                <%= image_tag user.photo %>
               <div class="card-body">
                 <p class="card-text"><%= user.name %></p>
                 <p class="card-text"><%= user.state %></p>

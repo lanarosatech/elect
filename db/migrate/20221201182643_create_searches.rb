@@ -3,7 +3,7 @@ class CreateSearches < ActiveRecord::Migration[7.0]
     create_table :searches do |t|
       t.string :state
       t.string :party
-      t.string :genre
+      t.string :gender
       t.string :race
 
       t.timestamps

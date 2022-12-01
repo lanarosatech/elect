@@ -7,7 +7,7 @@ class SearchesController < ApplicationController
     @search = Search.new
     @states = User.distinct.pluck(:state)
     @parties = User.distinct.pluck(:party)
-    @genres = User.distinct.pluck(:genre)
+    @genders = User.distinct.pluck(:gender)
     @races = User.distinct.pluck(:race)
   end
 
@@ -19,6 +19,6 @@ class SearchesController < ApplicationController
   private
 
   def search_params
-    params.require(:search).permit(:state, :part, :genre, :race)
+    params.require(:search).permit(:state, :party, :gender, :race)
   end
 end
