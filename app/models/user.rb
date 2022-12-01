@@ -4,9 +4,11 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :state, presence: true
+  has_many :user_answers
   validates :name, presence: true
-  validates_length_of :name, :maximum => 10
+  validates :state, presence: true
+  has_one_attached :photo
+  validates_length_of :name, :maximum => 30
 
   # transformar o nome em capitalize
   before_create { |user| user.name = user.capitalize if user.name.blank? }
@@ -18,4 +20,5 @@ class User < ApplicationRecord
       all
     end
   end
+
 end

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
 
+<<<<<<< HEAD
   get "surveys/new", to: "surveys#new"
   post "surveys/:id", to: "surveys#create"
   get "users/:id", to: "users#show"
@@ -10,4 +11,15 @@ Rails.application.routes.draw do
   get "devise/users", to: "users#show"
 
   resources :searches
+=======
+  resources :questions
+  resources :user_answers
+
+  resources :users do
+    collection do
+      get :top
+    end
+  end
+
+>>>>>>> main
 end
