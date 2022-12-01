@@ -5,6 +5,6 @@ class AddColumnsToUsers < ActiveRecord::Migration[7.0]
     add_column :users, :state, :string
     add_column :users, :party, :string
     add_column :users, :race, :string
-    add_column :users, :genre, :string
+    add_column :users, :gender, :string
   end
 end
