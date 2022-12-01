@@ -14,12 +14,12 @@
           <li class="nav-item active">
             <%= link_to "Home", new_user_session_path, class: "nav-link" %>
           </li>
-          <li class="nav-item dropdown">
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+          <%# <li class="nav-item dropdown"> %>
+            <%# <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"> %>
               <%# <%= link_to "action", "", class: "dropdown-item" %>
               <%# <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
-            </div>
-          </li>
+            <%# </div> %>
+          <%# </li> %>
         <% else %>
           <li class="nav-item">
             <%= link_to "LOGIN", new_user_session_path, class: "nav-link" %>
@@ -28,6 +28,10 @@
             <%= link_to "SIGN UP", new_user_session_path, class: "nav-link" %>
           </li>
         <% end %>
+
+          <li class="nav-item">
+            <%= link_to "See all candidates", users_path, class: "nav-link" %>
+          </li>
       </ul>
     </div>
   </div>

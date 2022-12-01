@@ -7,8 +7,8 @@ User.destroy_all
 puts "Database cleaned"
 puts "Creating a user"
 
-brad = User.create!(name: "Brad Pitt", state: "Rio de Janeiro", role: "", party: "", email: "bradpitt@gmail.com", password: "123456")
-kim = User.create!(name: "Kim Kardashian", state: "Rio de Janeiro", role: "", party: "", email: "kimkardashian@gmail.com", password: "123456")
+brad = User.create!(name: "Brad", state: "Rio de Janeiro", role: "Elector", party: "", email: "bradpitt@gmail.com", password: "123456")
+kim = User.create!(name: "Kim", state: "Rio de Janeiro", role: "", party: "Elector", email: "kimkardashian@gmail.com", password: "123456")
 
 # # # # # # # # # # CANDIDATES DATABASE HERE # # # # # # # # # # #
 
