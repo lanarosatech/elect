@@ -1,5 +1,13 @@
 class UsersController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
+  
+  # get the top action...
+  # return the first 5 (five) candidates according to the proximity percentage between the voter and the candidate...
+  # change the name of the action and include de route after all
+  def top
+    # @users = User.where(percentage >= 80%)
+    @users = User.all # the right one is where(similarity > 0.75)
+  end
 
   def index
     @users = User.all
