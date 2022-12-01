@@ -134,8 +134,6 @@ leblon = User.new(email: 'arthur.leblon@gmail.com', password: '123456', race: 'B
 leblon.photo.attach(io: file, filename: "leblon.png", content_type: "image/png")
 leblon.save!
 
-puts "Finished!"
-
 # # # # # # # # # # QUESTION/ANSWER DATABASE HERE # # # # # # # # # # #
 questions_path = "db/data/questions.csv"
 CSV.foreach(questions_path, headers: :first_row) do |row|
@@ -146,6 +144,9 @@ end
 
 Question.all.each do |question|
   Answer.create!(content: 'Agree', profile: 'Left', question_id: question.id)
-  Answer.create!(content: 'Whathever', profile: 'Center', question_id: question.id)
+  Answer.create!(content: 'Whatever', profile: 'Center', question_id: question.id)
   Answer.create!(content: 'Disagree', profile: 'Right', question_id: question.id)
 end
+
+puts "Finished!"
+

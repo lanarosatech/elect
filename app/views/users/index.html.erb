@@ -1,0 +1,94 @@
+<%= content_for(:navbar_class, "navbar-home") %>
+
+<div class="banner" style="background: #DCD7C9">
+
+  <h1 class="title" style="padding: 10px">Search through all candidates profiles</h1>
+
+  <div class="container">
+
+    <div class="form-search">
+      <div class="row-form">
+        <div class="col-form">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              State
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Femenine</a>
+              <a class="dropdown-item" href="#">Masculine</a>
+              <a class="dropdown-item" href="#">Other</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-form">
+        <div class="col-form">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Party
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Femenine</a>
+              <a class="dropdown-item" href="#">Masculine</a>
+              <a class="dropdown-item" href="#">Other</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-form">
+        <div class="col-form">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Genre
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Femenine</a>
+              <a class="dropdown-item" href="#">Masculine</a>
+              <a class="dropdown-item" href="#">Other</a>
+            </div>
+          </div>
+         </div>
+      </div>
+
+      <div class="row-form">
+        <div class="col-form">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Race
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">White</a>
+              <a class="dropdown-item" href="#">Black</a>
+              <a class="dropdown-item" href="#">Other</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <%if current_user.role != "Deputado Federal" %>
+        <% @users.each do |user| %>
+          <%if user.role == "Deputado Federal" %>
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 10rem;">
+                  <%= image_tag "profile.png" %>
+                  <%# <img src= "..." class="card-img-top" alt="..."> %>
+                  <div class="card-body">
+                    <h5 class="card-title"><%= user.name %></h5>
+                    <p class="card-text"><%= user.party %></p>
+                    <p class="card-text"><%= "Centro Esquerda" %></p>
+                    <p class="card-text"><%= "Priority: Race" %></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <%end %>
+        <%end %>
+      <%end %>
+    </div>
+  </div>
+</div>

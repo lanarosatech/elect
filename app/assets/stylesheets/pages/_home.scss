@@ -1,1 +1,36 @@
-// Specific CSS for your home-page
+.home-banner {
+  min-height: 100vh;
+  // display: grid;
+  // place-items: center;
+  padding-top: 240px;
+  text-align: center;
+  background-size: cover;
+}
+
+.home-container {
+  h1 {
+  color: black;
+  font-size: 56px;
+  font-weight:900;
+  text-shadow: 2px 2px 4px black;
+  }
+
+  p {
+  color: white ;
+  margin-top: 2rem;
+  font-size: 10px;
+  font-weight: medium;
+  text-shadow: none;
+  }
+}
+
+// /* Get started */
+
+.btn.btn-lg.btn-primary {
+  // width: 344px;
+  // height: 88px;
+  padding: 16px 16px;
+  background: #3F4E4F;
+  border-radius: 10px;
+  text-align: center;
+}
