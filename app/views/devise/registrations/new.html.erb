@@ -14,25 +14,32 @@
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "email" } %>
+    <%= f.input :state,
+                required: true,
+                collection: [ 'AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG',
+                'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO' ] %>
     <div class="role-field my-4">
-      <h5><strong>How would you like to register?</strong>  </h5>
-      <%= f.input_field :role,
+      <h4><strong>How would you like to register?</strong></h4>
+      <%= f.input       :role,
                         as: :radio_buttons,
-                        autofocus: true,
-                        collection: [['voter', ' As a voter'], ['candidate', ' As a candidate']],
+                        # autofocus: true,
+                        collection: [['voter', 'voter'], ['candidate', 'candidate']],
                         label_method: :second,
                         value_method: :first,
-                        required: true,
-                        input_html: { autocomplete: "role" } %>
+                        required: true
+                        # input_html: { autocomplete: "role" }
+                        %>
     </div>
     <%= f.input :party,
                 hint: "If you're a candidate affiliated to a political party",
                 autofocus: true,
                 input_html: { autocomplete: "party" } %>
-    <%= f.input :state,
-                required: true,
-                collection: [ 'AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG',
-                'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO' ] %>
+    <%= f.input :genre,
+                hint: "If you're a candidate affiliated to a political party",
+                collection: [ 'male', 'female' ] %>
+    <%= f.input :race,
+                hint: "If you're a candidate affiliated to a political party",
+                collection: [ 'white', 'black', 'indian', 'asian' ] %>
     <%= f.input :password,
                 required: true,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
