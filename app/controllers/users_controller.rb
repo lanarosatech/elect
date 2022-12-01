@@ -2,9 +2,9 @@ class UsersController < ApplicationController
   # get the top action...
   # return the first 5 (five) candidates according to the proximity percentage between the voter and the candidate...
   # change the name of the action and include de route after all
-  def index
+  def top
     # @users = User.where(percentage >= 80%)
-    @user = User.all
+    @users = User.all # the right one is where(similarity > 0.75)
   end
 
   # show the user profile... left-wing or right-wing and priorities...

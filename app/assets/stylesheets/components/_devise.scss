@@ -1,7 +1,8 @@
 .form-label {
-  margin-top: 20px;
+  margin: 0 0 4px 0;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   color:#3D3C42;
 }
 
@@ -9,7 +10,7 @@
     display: block;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.1;
     background-color: #ffffff;
     background-clip: padding-box;
     border-radius: 10px;
@@ -25,5 +26,14 @@ h2 {
   border-color: #3d3c42;
   background-color:#3D3C42;
   color: white;
+  border-radius: 10px;
+}
+
+.form-select {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.1;
+  background-color: #ffffff;
+  background-clip: padding-box;
   border-radius: 10px;
 }
