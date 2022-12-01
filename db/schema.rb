@@ -57,6 +57,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_29_191406) do
     t.string "role"
     t.string "state"
     t.string "party"
+    t.string "race"
+    t.string "genre"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
