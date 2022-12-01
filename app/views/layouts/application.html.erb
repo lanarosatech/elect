@@ -11,10 +11,14 @@
     <script src="https://kit.fontawesome.com/50e2a41905.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
-    <%= render "shared/navbar" %>
-    <%= render "shared/flashes" %>
-    <%= yield %>
-    <%= render "shared/footer" %>
-  </body>
+  <div class="page-container">
+    <body>
+      <%= render "shared/flashes" %>
+      <%= render "shared/navbar" %>
+      <%# <main id="main-content"> %>
+        <%= yield %>
+      <%# </main> %>
+      <%= render "shared/footer" %>
+    </body>
+  </div>
 </html>

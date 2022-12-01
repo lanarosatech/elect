@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get "users", to: "users#index"
   get "users/candidates", to: "users#index"
   get "devise/users", to: "users#show"
+
+  resources :searches
 end

@@ -10,4 +10,12 @@ class User < ApplicationRecord
 
   # transformar o nome em capitalize
   before_create { |user| user.name = user.capitalize if user.name.blank? }
+
+  def self.search(search)
+    if search
+      where(["name LIKE ?","%#{search}%"])
+    else
+      all
+    end
+  end
 end

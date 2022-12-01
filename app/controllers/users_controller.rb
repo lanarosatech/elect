@@ -3,6 +3,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+    @user = User.search(params[:search]) # para procurar os candidatos
   end
 
   def show
@@ -12,6 +13,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:id, :name, :role, :state, :party, :email, :photo)
+    params.require(:user).permit(:id, :name, :role, :state, :party, :email, :genre, :race, :photo)
   end
 end

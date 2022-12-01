@@ -1,0 +1,32 @@
+<%= content_for(:navbar_class, "navbar-home") %>
+
+<div class="banner-2" style="background: #DCD7C9">
+
+  <h1 class="title">Search Candidates Results</h1>
+  <div class="container">
+
+    <%if @search.search_user.empty? %>
+      <p>No candidate were found.</p>
+    <%else %>
+      <div class="row">
+              <%# <img src= "..." class="card-img-top" alt="..."> %>
+        <% @search.search_user.each do |user| %>
+          <div class="col-3">
+            <div class="card mt-4" style="width: 9rem;">
+              <%= image_tag "profile.png" %>
+              <div class="card-body">
+                <p class="card-text"><%= user.name %></p>
+                <p class="card-text"><%= user.state %></p>
+                <p class="card-text"><%= user.party %></p>
+                <p class="card-text"><%= user.role %></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <%end %>
+    <div class="container-link">
+    <%= link_to "Click to back to search", new_search_path %>
+    </div>
+  </div>
+</div>
