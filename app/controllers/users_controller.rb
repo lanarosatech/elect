@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
-  
+
   # get the top action...
   # return the first 5 (five) candidates according to the proximity percentage between the voter and the candidate...
   # change the name of the action and include de route after all
@@ -20,6 +20,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:id, :name, :role, :state, :party, :email, :photo)
+    params.require(:user).permit(:id, :name, :role, :state, :party, :genre, :race, :email, :photo)
   end
 end
