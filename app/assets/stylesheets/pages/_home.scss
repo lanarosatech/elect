@@ -11,12 +11,12 @@
   h1 {
   color: black;
   font-size: 56px;
-  font-weight:900;
-  text-shadow: 2px 2px 4px black;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px black;
   }
 
   p {
-  color: white ;
+  color: black;
   margin-top: 2rem;
   font-size: 10px;
   font-weight: medium;
@@ -34,6 +34,8 @@
   border-radius: 10px;
   text-align: center;
 }
+
+// # FIXA O FOOTER E NAVBAR #
 
 .page-container {
   display: grid;
