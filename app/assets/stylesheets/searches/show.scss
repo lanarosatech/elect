@@ -5,45 +5,42 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.title-search-show {
-  font-family: 'Montserrat';
-  text-align: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  padding: 40px;
-  color: #2C3639;
-}
-
-.container-search-show {
-  padding: 15px;
-  box-sizing: content-box;
-  text-align: center;
-}
-
-.row-search-show{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  min-height: 60%;
-  box-sizing:border-box;
-}
 
 
-.container-link {
-  padding: 15px;
-  box-sizing: content-box;
-  margin-top: 50px;
-
-  a {
+  .title-search-show {
     font-family: 'Montserrat';
-    text-align: left;
-    font-size: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 30px;
     color: #2C3639;
-    text-decoration: none;
+  }
+
+  .container-search-show {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .row-search-show{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+  .container-link {
+    padding: 15px;
+    box-sizing: content-box;
+    margin-top: 50px;
+
+    a {
+      font-family: 'Montserrat';
+      text-align: left;
+      font-size: 20px;
+      color: #2C3639;
+      text-decoration: none;
+    }
   }
 }
 

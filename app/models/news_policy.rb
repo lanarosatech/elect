@@ -1,0 +1,2 @@
+class NewsPolicy < ApplicationRecord
+end
