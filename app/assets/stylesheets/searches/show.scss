@@ -1,0 +1,59 @@
+.title {
+  font-family: 'Montserrat';
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  padding: 40px;
+  color: #2C3639;
+}
+
+.container {
+  padding: 15px;
+  box-sizing: content-box;
+  text-align: center;
+}
+
+.container-link {
+  padding: 15px;
+  box-sizing: content-box;
+  margin-top: 50px;
+
+  a {
+    font-family: 'Montserrat';
+    text-align: left;
+    font-size: 20px;
+    color: #2C3639;
+    text-decoration: none;
+  }
+}
+
+// # # # CARDS # # #
+
+.card.mt-4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-sizing: content-box;
+  width: 60px;
+  height: 340px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 15px 15px 15px 15px;
+  border: 0.5px solid #777676;
+  background: #FFFFFF;
+
+  img{
+    box-sizing: content-box;
+    border-radius: 15px;
+  }
+
+  .card-body {
+    box-sizing: content-box;
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+  }
+}

@@ -57,6 +57,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_30_222019) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "searches", force: :cascade do |t|
+    t.string "state"
+    t.string "party"
+    t.string "gender"
+    t.string "race"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "role"
+  end
+
   create_table "user_answers", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "answer_id", null: false

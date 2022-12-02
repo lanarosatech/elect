@@ -9,14 +9,14 @@ puts "Database cleaned"
 puts "Creating a user"
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204535.jpgmaior.jpg')
-samia = User.new(email: 'samia.bomfim@gmail.com', password: '123456', race: 'white', gender: 'female', role:
-  'candidate', state: 'SP', party: 'PSOL', name: 'Samia Bomfim')
+samia = User.new(email: 'samia.bomfim@gmail.com', password: '123456', race: 'WHITE', gender: 'FEMALE', role:
+  'Federal Congressman', state: 'São Paulo', party: 'Psol', name: 'Samia Bomfim')
 samia.photo.attach(io: file, filename: "samia.jpg", content_type: "image/jpg")
 samia.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/73604.jpgmaior.jpg')
 rui = User.new(email: 'rui.falcao@gmail.com', password: '123456', race: 'white', gender: 'male', role:
-  'candidate', state: 'SP', party: 'PT', name: 'Rui Falcão')
+  'candidate', state: 'São Paulo', party: 'PT', name: 'Rui Falcão')
 rui.photo.attach(io: file, filename: "rui.jpg", content_type: "image/jpg")
 rui.save!
 

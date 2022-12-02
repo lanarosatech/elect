@@ -1,0 +1,30 @@
+<%= content_for(:navbar_class, "navbar-home") %>
+
+<div class="banner-2" style="background: #DCD7C9">
+
+  <h1 class="title">Search through all candidates profiles</h1>
+
+  <div class="container">
+    <%= form_with model: @search do |f| %>
+      <div class="selects">
+        <%= f.label :state %>
+          <%= f.select :state, options_for_select(@states), include_blank: true %><br>
+      </div>
+      <div class="selects">
+        <%= f.label :party %>
+          <%= f.select :party, options_for_select(@parties), include_blank: true %><br>
+      </div>
+      <div class="selects">
+        <%= f.label :gender %>
+          <%= f.select :gender, options_for_select(@genders), include_blank: true %><br>
+      </div>
+      <div class="selects">
+        <%= f.label :race %>
+          <%= f.select :race, options_for_select(@races), include_blank: true %><br>
+      </div>
+      <div class="selects-search">
+          <%= f.submit "Search" %>
+      </div>
+    <%end %>
+  </div>
+</div>
