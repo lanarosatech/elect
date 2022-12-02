@@ -8,17 +8,23 @@
   color: #2C3639;
 }
 
+.banner-2-search {
+  background: #DCD7C9;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 // # # #  FORMS DE PESQUISA # # #
 
-.container {
+.container-search-new {
   padding: 15px;
-  box-sizing: content-box;
+  box-sizing: border-box;
   text-align: center;
+  display: inline;
 
-  .form {
-    text-align: center;
-    display: inline;
-  }
 
   .selects {
     padding: 15px;
@@ -32,12 +38,5 @@
     color: #ffffff;
   }
 
-  input {
-    color: #2C3639;
-  }
-
-  select {
-    color: #2C3639;
-  }
 
 }
