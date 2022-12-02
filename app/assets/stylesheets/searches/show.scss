@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.title {
+.title-search-show {
   font-family: 'Montserrat';
   text-align: center;
   font-style: normal;
@@ -22,6 +22,16 @@
   box-sizing: content-box;
   text-align: center;
 }
+
+.row-search-show{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  min-height: 60%;
+  box-sizing:border-box;
+}
+
 
 .container-link {
   padding: 15px;
@@ -50,12 +60,12 @@
   border: 0.5px solid #777676;
   background: #FFFFFF;
 
-  img{
+  .img-search-show{
     box-sizing: border-box;
     border-radius: 10px;
   }
 
-  .card-body {
+  .card-body-search-show {
     box-sizing:border-box;
     width: 160px;
     height: 160px;
