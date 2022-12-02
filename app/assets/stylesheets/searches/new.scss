@@ -1,0 +1,43 @@
+.title {
+  font-family: 'Montserrat';
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  padding: 40px;
+  color: #2C3639;
+}
+
+// # # #  FORMS DE PESQUISA # # #
+
+.container {
+  padding: 15px;
+  box-sizing: content-box;
+  text-align: center;
+
+  .form {
+    text-align: center;
+    display: inline;
+  }
+
+  .selects {
+    padding: 15px;
+    box-sizing: content-box;
+    display: inline-block;
+  }
+
+  .selects-search {
+    display: inline;
+    background-color: #2C3639;
+    color: #ffffff;
+  }
+
+  input {
+    color: #2C3639;
+  }
+
+  select {
+    color: #2C3639;
+  }
+
+}
