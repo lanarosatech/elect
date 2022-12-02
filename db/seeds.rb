@@ -13,16 +13,19 @@ samia = User.new(email: 'samia.bomfim@gmail.com', password: '123456', race: 'whi
   'candidate', state: 'São Paulo', party: 'Psol', name: 'Samia Bomfim')
 samia.photo.attach(io: file, filename: "samia.jpg", content_type: "image/jpg")
 samia.save!
+
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/73604.jpgmaior.jpg')
 rui = User.new(email: 'rui.falcao@gmail.com', password: '123456', race: 'white', gender: 'male', role:
   'candidate', state: 'São Paulo', party: 'PT', name: 'Rui Falcão')
 rui.photo.attach(io: file, filename: "rui.jpg", content_type: "image/jpg")
 rui.save!
+
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/92346.jpgmaior.jpg')
 eduardo = User.new(email: 'eduardo.bolsonaro@gmail.com', password: '123456', race: 'white', gender: 'male', role:
   'candidate', state: 'São Paulo', party: 'PL', name: 'Eduardo Bolsonaro')
 eduardo.photo.attach(io: file, filename: "eduardo.jpg", content_type: "image/jpg")
 eduardo.save!
+
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/73441.jpgmaior.jpg')
 celso = User.new(email: 'celso.russomano@gmail.com', password: '123456', race: 'white', gender: 'male', role:
   'candidate', state: 'São Paulo', party: 'Republicanos', name: 'Celso Russomano')
