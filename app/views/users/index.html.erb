@@ -69,9 +69,9 @@
     </div>
 
     <div>
-      <%if current_user.role != "Deputado Federal" %>
+      <%if current_user.role != "candidate" %>
         <% @users.each do |user| %>
-          <%if user.role == "Deputado Federal" %>
+          <%if user.role == "candidate" %>
             <div class="row">
               <div class="col">
                 <div class="card" style="width: 10rem;">
