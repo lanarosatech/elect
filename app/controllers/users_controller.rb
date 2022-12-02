@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
-  self.inheritance_column = "not_sti"
+  # self.inheritance_column = "not_sti"
 
   # get the top action...
   # return the first 5 (five) candidates according to the proximity percentage between the voter and the candidate...
