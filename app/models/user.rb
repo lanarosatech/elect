@@ -10,7 +10,11 @@ class User < ApplicationRecord
   has_one_attached :photo
   validates_length_of :name, :maximum => 30
 
-  # transformar o nome em capitalize
-  before_create { |user| user.name = user.capitalize if user.name.blank? }
-
+  def self.search(search)
+    if search
+      where(["name LIKE ?","%#{search}%"])
+    else
+      all
+    end
+  end
 end

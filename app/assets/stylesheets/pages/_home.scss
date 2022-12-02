@@ -2,7 +2,7 @@
   min-height: 100vh;
   // display: grid;
   // place-items: center;
-  padding-top: 240px;
+  padding-top: 280px;
   text-align: center;
   background-size: cover;
 }
@@ -33,4 +33,10 @@
   background: #3F4E4F;
   border-radius: 10px;
   text-align: center;
+}
+
+.page-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }

@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
 
+  get "devise/users", to: "users#show"
+
+  resources :searches
   resources :questions
   resources :user_answers
 
@@ -10,5 +13,4 @@ Rails.application.routes.draw do
       get :top
     end
   end
-
 end
