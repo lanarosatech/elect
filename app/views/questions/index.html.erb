@@ -1,9 +1,18 @@
-<div class="container">
-<% @questions.each do |question| %>
-  <h4><%= question.content %></h4>
-  <%= simple_form_for(@user_answer) do |f| %>
-    <%= f.association :answer, as: :radio_buttons, collection: question.answers.pluck(:content) %>
-    <%= f.submit %>
+<div class="container" style="width: 45%;">
+  <% @questions.each do |question| %>
+    <div class="all_card">
+        <div class="question_card">
+          <h4><%= question.content %></h4>
+        </div>
+          <%= simple_form_for(@user_answer) do |f| %>
+            <div class="question_answers_card">
+              <%= f.input :answer, as: :radio_buttons, collection: question.answers.pluck(:content), legend_tag: false %>
+            </div>
+              <div class="button">
+                <%#= f.submit "Confirm Answer", class:"btn btn-primary"%>
+              </div>
+          <% end %>
+    </div>
   <% end %>
-<% end %>
+  <%= link_to "Confirm answers", user_path(current_user), class: "btn btn-primary" %>
 </div>
