@@ -97,10 +97,10 @@ misael = User.new(email: 'misael.varella@gmail.com', password: '123456', race: '
 misael.photo.attach(io: file, filename: "misael.jpg", content_type: "image/jpg")
 misael.save!
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204447.jpgmaior.jpg')
-flordelis = User.new(email: 'flordelis@gmail.com', password: '123456', race: 'black', gender: 'female', role:
-  'candidate', state: 'Rio de Janeiro', party: 'PSD', name: 'Flordelis')
-flordelis.photo.attach(io: file, filename: "flordelis.jpg", content_type: "image/jpg")
-flordelis.save!
+flordcelios = User.new(email: 'flordcelios@gmail.com', password: '123456', race: 'black', gender: 'female', role:
+  'candidate', state: 'Rio de Janeiro', party: 'PSD', name: 'Flordcelios')
+flordcelios.photo.attach(io: file, filename: "flordcelios.jpg", content_type: "image/jpg")
+flordcelios.save!
 file = URI.open('https://faculdadesantaluzia.edu.br/wp-content/uploads/2019/04/sem-imagem-avatar.png')
 helena = User.new(email: 'helena.itaim@gmail.com', password: '123456', race: 'white', gender: 'female', role:
   'voter', state: 'São Paulo', party: nil, name: 'Helena Itaim')

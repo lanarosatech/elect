@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   resources :questions
   resources :user_answers
   resources :searches
-  resources :news_policies
 
   resources :users do
     collection do
