@@ -1,8 +1,8 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: #2C3639;
+  background: black;
   width: 100%;
-  height: 100px;
+  height: 70px;
   left: 0px;
   top: 0px;
 }
@@ -12,22 +12,22 @@
 }
 
 .navbar-lewagon .nav-link, li {
-  font-family: 'Montserrat';
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+   'Helvetica Neue', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
   /* identical to box height, or 83% */
-
-  color: #FFFFFF;
+  color: #d1d1d1;
 }
 
 .navbar-lewagon .navbar-brand img {
   position: absolute;
-  width: 135px;
-  height: 73px;
+  width: 70px;
+  height: 50px;
   left: 20px;
-  top: 13px;
+  top: 9px;
 }
 
 .nav-item {
@@ -35,6 +35,6 @@
   margin: 0 16px 0 8px;
 }
 
-.img-logo {
-  height: 40px;
+.img-logo a:hover{
+  height: 15px;
 }
