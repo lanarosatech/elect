@@ -1,8 +1,8 @@
 <%= content_for(:navbar_class, "navbar-home") %>
 
-<div class="banner-2-search">
+<div class="banner-search-show">
 
-  <h1 class="title-search-show">Search Candidates Results</h1>
+  <h2 class="title-search-show">Search Candidates Results</h2>
   <div class="container-search-show">
 
     <%if @search.search_user.empty? %>
@@ -10,23 +10,25 @@
     <%else %>
       <div class="row-search-show">
         <% @search.search_user.each do |user| %>
-          <div class="col-2">
-            <div class="card mt-4" style="width: 9rem;">
-              <img class="img-search-show">
-                <%= image_tag user.photo %>
-              <div class="card-body-search-show">
-                <p class="card-text-search-show"><%= user.name %></p>
-                <p class="card-text-search-show"><%= user.state %></p>
-                <p class="card-text-search-show"><%= user.party %></p>
-                <p class="card-text-search-show"><%= user.role %></p>
+          <% if user.role == "candidate" %>
+            <div class="col-2">
+              <div class="card mt-4" style="width: 9rem;">
+                <img class="img-search-show">
+                  <%= image_tag user.photo %>
+                <div class="card-body-search-show">
+                  <p class="card-text-search-show"><%= user.name %><br/>
+                  <p class="card-text-search-show"><%= user.state %><br/>
+                  <p class="card-text-search-show"><%= user.party %><br/>
+                  <p class="card-text-search-show"><%= user.role %><br/>
+                </div>
               </div>
             </div>
-          </div>
+          <% end %>
         <% end %>
       </div>
     <%end %>
     <div class="container-link">
-    <%= link_to "Click to back to search", new_search_path %>
+    <%= link_to "Click to back to search", searches_path %>
     </div>
   </div>
 </div>
