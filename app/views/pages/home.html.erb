@@ -1,11 +1,15 @@
-<%= content_for(:navbar_class, "navbar-home") %>
-
-
-<div class="home-banner"  style="background-image: linear-gradient(-225deg, rgba(0,71,198,0.1) 0%, rgba(0,36,61,0.1) 93%), url(<%= image_path 'background-img-elect.jpg' %>);">
-  <div class="home-container">
-    <h1 class="text-center">Find the candidate that better attends your expectations</h1>
-    <div class="home-btn">
-    <p>  <%= link_to "Get Started", questions_path, class: "btn btn-lg btn btn-flat py-3 px-3" %> </p>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="_home.scss">
+  </head>
+  <body>
+    <%= content_for(:navbar_class, "navbar-home") %>
+      <div class="hero">
+          <h1 class="slogan">Elect yourself or who votes as you would</h1>
+            <div class="home-btn">
+              <p>  <%= link_to "Get Started", questions_path, class: "btn btn-lg btn btn-flat" %> </p>
+        </div>
+      </div>
+  </body>
+</html>
