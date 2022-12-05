@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :answers
   resources :user_answers
   resources :searches
+  resources :abouts
 
   resources :users do
     collection do
