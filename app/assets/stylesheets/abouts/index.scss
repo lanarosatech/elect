@@ -1,0 +1,39 @@
+.banner-about {
+  background-color: #FF4301;
+  background-image: url("/assets/hands.jpg");
+  padding: 3% 10% 10% 3%;
+  background-size: cover;
+  text-align: center;
+  display: inherit;
+}
+
+h2.about-title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+  'Helvetica Neue', sans-serif;
+  color: #4A3F35;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  background-color: none;
+}
+
+.about-us {
+  background-color: #FA7D09;
+  border-radius: 20px;
+  opacity: 95%;
+  background-size: cover;
+  width: 50%;
+  height: 50%;
+  display: inline-grid;
+  padding: 1% 5% 5% 5%;
+}
+
+p.about-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: none;
+  text-align: justify;
+}
