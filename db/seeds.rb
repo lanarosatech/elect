@@ -249,8 +249,8 @@ pedrouczai.photo.attach(io: file, filename: "pedrouczai.jpg", content_type: "ima
 pedrouczai.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204369.jpgmaior.jpg')
-carolinedetoni = User.new(email: 'dep.carolinedetoni@camara.leg.br', password: '123456', race: 'white', gender: 'female'
-  , role: 'candidate', state: 'Santa Catarina', party: 'PL', name: 'Caroline de Toni')
+carolinedetoni = User.new(email: 'dep.carolinedetoni@camara.leg.br', password: '123456', race: 'white', gender:
+  'female', role: 'candidate', state: 'Santa Catarina', party: 'PL', name: 'Caroline de Toni')
 carolinedetoni.photo.attach(io: file, filename: "carolinedetoni.jpg", content_type: "image/jpg")
 carolinedetoni.save!
 
@@ -362,7 +362,7 @@ hermes = User.new(email: 'hermesparcianello@camara.leg.br', password: '123456', 
 hermes.photo.attach(io: file, filename: "hermes.jpg", content_type: "image/jpg")
 hermes.save!
 
-file = URI.open('')
+file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/178933.jpgmaior.jpg')
 sergiosouza = User.new(email: 'sergiosouza@camara.leg.br', password: '123456', race: 'white', gender: 'male', role:
   'candidate', state: 'Paraná', party: 'MDB', name: 'Sergio Souza')
 sergiosouza.photo.attach(io: file, filename: "sergiosouza.jpg", content_type: "image/jpg")
