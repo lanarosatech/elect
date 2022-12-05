@@ -1,0 +1,50 @@
+<%= content_for(:navbar_class, "navbar-home") %>
+
+
+<div class="banner-search-index">
+
+  <h2 class="title-search-index">Search through all candidates profiles</h2>
+
+  <div class="container-search-index">
+    <%= form_with model: @search do |f| %>
+      <div class="selects">
+        <%= f.label :state %>
+          <%= f.select :state, options_for_select(@states), include_blank: true %><br>
+      </div>
+      <div class="selects">
+        <%= f.label :party %>
+          <%= f.select :party, options_for_select(@parties), include_blank: true %><br>
+      </div>
+      <div class="selects">
+        <%= f.label :gender %>
+          <%= f.select :gender, options_for_select(@genders), include_blank: true %><br>
+      </div>
+      <div class="selects">
+        <%= f.label :race %>
+          <%= f.select :race, options_for_select(@races), include_blank: true %><br>
+      </div>
+      <div class="selects-search">
+          <%= f.submit "Search" %>
+      </div>
+    <%end %>
+  </div>
+
+    <div class="row-search-show">
+      <% @search.search_user.each do |user| %>
+        <% if user.role == "candidate" %>
+          <div class="col-2">
+            <div class="card mt-4" style="width: 9rem;">
+              <img class="img-search-show">
+                <%= image_tag user.photo %>
+              <div class="card-body-search-show">
+                <p class="card-text-search-show"><%= user.name %><br/>
+                <p class="card-text-search-show"><%= user.state %><br/>
+                <p class="card-text-search-show"><%= user.party %><br/>
+                <p class="card-text-search-show"><%= user.role %><br/>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+</div>
