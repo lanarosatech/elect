@@ -1,15 +1,16 @@
-.title {
+.title-search-index  {
   font-family: 'Montserrat';
   text-align: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  padding: 40px;
-  color: #2C3639;
+  font-size: 30px;
+  padding: 30px;
+  margin-top: 2%;
+  color: #FFFFFF;
 }
 
-.banner-2-search {
-  background: #DCD7C9;
+.banner-search-index {
+  background: #2F2519;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -19,22 +20,33 @@
 
 // # # #  FORMS DE PESQUISA # # #
 
-.container-search-new {
+.container-search-index {
   padding: 15px;
   box-sizing: border-box;
   text-align: center;
   display: inline;
- }
+  color:#FFFFFF;
+  font-family: 'Montserrat';
+  background-color: #4A3F35;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */;
 
+}
 
-  .selects {
-    padding: 15px;
-    box-sizing: content-box;
-    display: inline-block;
-  }
+.row-search-show {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: initial;
+  margin: 5%;
+}
 
-  .selects-search {
-    display: inline;
-    background-color: #2C3639;
-    color: #ffffff;
-  }
+.selects {
+  padding: 15px;
+  display: inline-block;
+}
+
+// # # #  BOTÃO SEARCH  # # #
+.selects-search {
+  display: inline;
+}
