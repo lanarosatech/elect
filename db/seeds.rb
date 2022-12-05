@@ -559,6 +559,7 @@ laertebessa.photo.attach(io: file, filename: "laertebessa.jpg", content_type: "i
 laertebessa.save!
 
 
+
 # # # # # # # # # # QUESTION/ANSWER DATABASE HERE # # # # # # # # # # #
 questions_path = "db/data/questions.csv"
 CSV.foreach(questions_path, headers: :first_row) do |row|
