@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get "devise/users", to: "users#show"
   resources :questions
+  resources :answers
   resources :user_answers
   resources :searches
 
