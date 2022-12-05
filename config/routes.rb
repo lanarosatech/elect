@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :answers
   resources :user_answers
 
+  patch 'questions', to: 'questions#profile_definition'
+
   resources :users do
     collection do
       get :top
