@@ -38,7 +38,7 @@ baleia.photo.attach(io: file, filename: "baleia.jpg", content_type: "image/jpg")
 baleia.save!
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204539.jpgmaior.jpg')
 hercilio = User.new(email: 'hercilio.coelho@gmail.com', password: '123456', race: 'white', gender: 'male', role:
-  'candidate', state: 'Minas Gerais', party: 'MDB', name: 'Hercilio Coelho Diniz')
+  'candidate', state: 'Minas Gerais', party: 'MDB', name: 'Hercilio C. Diniz')
 hercilio.photo.attach(io: file, filename: "hercilio.jpg", content_type: "image/jpg")
 hercilio.save!
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204509.jpgmaior.jpg')
@@ -68,7 +68,7 @@ leonardo.photo.attach(io: file, filename: "leonardo.jpg", content_type: "image/j
 leonardo.save!
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204504.jpgmaior.jpg')
 cezinha = User.new(email: 'cezinha.madureira@gmail.com', password: '123456', race: 'white', gender: 'male', role:
-  'candidate', state: 'São Paulo', party: 'PSD', name: 'Cezinha de Madureira')
+  'candidate', state: 'São Paulo', party: 'PSD', name: 'Cezinha Madureira')
 cezinha.photo.attach(io: file, filename: "cezinha.jpg", content_type: "image/jpg")
 cezinha.save!
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204464.jpgmaior.jpg')
@@ -78,7 +78,7 @@ taliria.photo.attach(io: file, filename: "taliria.jpg", content_type: "image/jpg
 taliria.save!
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/73701.jpgmaior.jpg')
 benedita = User.new(email: 'benedita.silva@gmail.com', password: '123456', race: 'black', gender: 'female', role:
-  'candidate', state: 'Rio de Janeiro', party: 'PT', name: 'Benedita da Silva')
+  'candidate', state: 'Rio de Janeiro', party: 'PT', name: 'Benedita Silva')
 benedita.photo.attach(io: file, filename: "benedita.jpg", content_type: "image/jpg")
 benedita.save!
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204462.jpgmaior.jpg')
@@ -254,7 +254,7 @@ pedrouczai.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204369.jpgmaior.jpg')
 carolinedetoni = User.new(email: 'dep.carolinedetoni@camara.leg.br', password: '123456', race: 'white', gender:
-  'female', role: 'candidate', state: 'Santa Catarina', party: 'PL', name: 'Caroline de Toni')
+  'female', role: 'candidate', state: 'Santa Catarina', party: 'PL', name: 'Caroline Toni')
 carolinedetoni.photo.attach(io: file, filename: "carolinedetoni.jpg", content_type: "image/jpg")
 carolinedetoni.save!
 
@@ -350,7 +350,7 @@ giacobo.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/193726.jpgmaior.jpg')
 pemartins = User.new(email: 'pauloeduardomartins@camara.leg.br', password: '123456', race: 'white', gender: 'male',
-  role: 'candidate', state: 'Paraná', party: 'PL', name: 'Paulo Eduardo M.')
+  role: 'candidate', state: 'Paraná', party: 'PL', name: 'Paulo Eduardo')
 pemartins.photo.attach(io: file, filename: "pemartins.jpg", content_type: "image/jpg")
 pemartins.save!
 
@@ -428,7 +428,7 @@ mmofatto.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204390.jpgmaior.jpg')
 profalcides = User.new(email: 'profalcides@gmail.com', password: '123456', race: 'white', gender: 'male', role:
-  'candidate', state: 'Goiás', party: 'PL', name: 'Professor Alcides')
+  'candidate', state: 'Goiás', party: 'PL', name: 'Prof. Alcides')
 profalcides.photo.attach(io: file, filename: "profalcides.jpg", content_type: "image/jpg")
 profalcides.save!
 
@@ -446,7 +446,7 @@ celiosilveira.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204386.jpgmaior.jpg')
 jmschreiner = User.new(email: 'jmschreiner@gmail.com', password: '123456', race: 'white', gender: 'male', role:
-  'candidate', state: 'Goiás', party: 'MDB', name: 'Jose Mario Schreiner')
+  'candidate', state: 'Goiás', party: 'MDB', name: 'Jose M. Schreiner')
 jmschreiner.photo.attach(io: file, filename: "jmschreiner.jpg", content_type: "image/jpg")
 jmschreiner.save!
 
@@ -458,7 +458,7 @@ franciscojr.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204467.jpgmaior.jpg')
 professorarosaneide = User.new(email: 'dep.professorarosaneide@camara.leg.br', password: '123456', race: 'white',
-  gender: 'female', role: 'candidate', state: 'Mato Grosso', party: 'PT', name: 'Professora Rosa Neide')
+  gender: 'female', role: 'candidate', state: 'Mato Grosso', party: 'PT', name: 'Prof. Rosa Neide')
 professorarosaneide.photo.attach(io: file, filename: "professorarosaneide.jpg", content_type: "image/jpg")
 professorarosaneide.save!
 
@@ -488,7 +488,7 @@ carlosbezerra.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/198783.jpgmaior.jpg')
 emanuelpneto = User.new(email: 'emanuelpneto@gmail.com', password: '123456', race: 'white', gender: 'male', role:
-  'candidate', state: 'Mato Grosso', party: 'MDB', name: 'Emanuel Pinheiro Neto')
+  'candidate', state: 'Mato Grosso', party: 'MDB', name: 'Emanuel P. Neto')
 emanuelpneto.photo.attach(io: file, filename: "emanuelpneto.jpg", content_type: "image/jpg")
 emanuelpneto.save!
 
@@ -530,7 +530,7 @@ erikakokay.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204372.jpgmaior.jpg')
 jcribeiro = User.new(email: 'jcribeiro@gmail.com', password: '123456', race: 'white', gender: 'male', role: 'candidate',
-   state: 'Distrito Federal', party: 'Republicanos', name: 'Julio Cesar Ribeiro')
+   state: 'Distrito Federal', party: 'Republicanos', name: 'Julio Cesar R.')
 jcribeiro.photo.attach(io: file, filename: "jcribeiro.jpg", content_type: "image/jpg")
 jcribeiro.save!
 
@@ -557,8 +557,6 @@ laertebessa = User.new(email: 'laertebessa@gmail.com', password: '123456', race:
   'candidate', state: 'Distrito Federal', party: 'PL', name: 'Laerte Bessa')
 laertebessa.photo.attach(io: file, filename: "laertebessa.jpg", content_type: "image/jpg")
 laertebessa.save!
-
-
 
 # # # # # # # # # # QUESTION/ANSWER DATABASE HERE # # # # # # # # # # #
 questions_path = "db/data/questions.csv"

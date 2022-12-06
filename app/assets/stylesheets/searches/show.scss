@@ -1,5 +1,5 @@
 .banner-search-show {
-  background: #2F2519;
+  background: #cd9046;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,8 @@
 
 
   .title-search-show {
-    font-family: 'Montserrat';
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+  'Helvetica Neue', sans-serif;
     text-align: center;
     font-style: normal;
     font-weight: 500;
@@ -16,6 +17,9 @@
     padding: 30px;
     margin-top: 5%;
     color: #FFFFFF;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -35,35 +39,19 @@
 
 .col-2 {
   flex: none;
-  width: none;
+  width: auto;
 }
-
-
-.container-link {
-  padding: 15px;
-  box-sizing: content-box;
-  margin-top: 50px;
-
-  a {
-    font-family: 'Montserrat';
-    text-align: left;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-decoration: none;
-  }
-}
-
 
 // # # # CARDS # # #
 
 .card.mt-4 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  box-sizing: content-box;
-  width: 80px;
-  height: 320px;
-  padding: 15px;
   border-radius: 15px 15px 15px 15px;
   border: 0.5px solid #777676;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-sizing: content-box;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
   background: #FFFFFF;
 
   .img-search-show{
@@ -73,17 +61,36 @@
 
   .card-body-search-show{
     margin-top: 15%;
+    width: 100%;
+    height: 100%;
   }
   .card-text-search-show {
-    box-sizing:border-box;
-    width: 160px;
-    height: 160px;
-    padding: 5px;
+    box-sizing: border-box;
     font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    text-align: center;
-    display:contents;
-    color: #4A3F35;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    display: contents;
+    color: black;
+  }
+
+  .icons-search {
+    padding: 2px;
+    margin-right: 2px;
+  }
+}
+
+// # # RETURN BUTTON ##
+
+.show-search-btn {
+  padding: 15px;
+  box-sizing: content-box;
+
+  a {
+    font-family: 'Montserrat';
+    text-align: left;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
   }
 }
