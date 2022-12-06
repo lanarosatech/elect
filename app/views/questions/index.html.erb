@@ -6,10 +6,10 @@
         </div>
           <%= simple_form_for(@user_answer) do |f| %>
             <div class="question_answers_card">
-              <%= f.association :answer, as: :radio_buttons, collection: question.answers.pluck(:content) %>
+              <%= f.input :answer, as: :radio_buttons, collection: question.answers.pluck(:content), legend_tag: false %>
             </div>
               <div class="button">
-                <%= f.submit "Confirm Answer", class:"btn btn-primary"%>
+                <%#= f.submit "Confirm Answer", class:"btn btn-primary"%>
               </div>
           <% end %>
     </div>
