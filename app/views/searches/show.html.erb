@@ -2,7 +2,7 @@
 
 <div class="banner-search-show">
 
-  <%# <h2 class="title-search-show">Search Candidates Results</h2> %>
+  <h2 class="title-search-show"> <i class="fa-solid fa-square-poll-horizontal"></i></i> Here is the result of your search <i class="fa-solid fa-square-poll-horizontal"></i></h2>
   <div class="container-search-show">
 
     <%if @search.search_user.empty? %>
@@ -15,11 +15,19 @@
               <div class="card mt-4" style="width: 9rem;">
                 <img class="img-search-show">
                   <%= image_tag user.photo %>
-                <div class="card-body-search-show">
-                  <p class="card-text-search-show"><%= user.name %><br/>
-                  <p class="card-text-search-show"><%= user.state %><br/>
-                  <p class="card-text-search-show"><%= user.party %><br/>
-                  <p class="card-text-search-show"><%= user.role %><br/>
+                <div class="card-body-search-show" style="text-align: justify">
+                  <div class="icons-search">
+                    <i class="fa-regular fa-user"></i>
+                    <p class="card-text-search-show"><%= user.name %><br/>
+                  </div>
+                  <div class="icons-search">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="card-text-search-show"></i> <%= user.state %><br/>
+                  </div>
+                  <div class="icons-search">
+                    <i class="fa-regular fa-handshake"></i>
+                    <p class="card-text-search-show">  <%= user.party %><br/>
+                  </div>
                 </div>
               </div>
             </div>
