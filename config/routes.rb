@@ -4,12 +4,11 @@ Rails.application.routes.draw do
 
   get "devise/users", to: "users#show"
   resources :questions
-  resources :answers
   resources :user_answers
   resources :searches
   resources :abouts
 
-  patch 'questions', to: 'questions#profile_definition'
+  # patch 'questions', to: 'questions#profile_definition'
 
   resources :users do
     collection do

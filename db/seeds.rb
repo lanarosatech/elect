@@ -10,7 +10,7 @@ puts "Creating a user"
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204535.jpgmaior.jpg')
 samia = User.new(email: 'samia.bomfim@gmail.com', password: '123456', race: 'white', gender: 'female', role:
-  'candidate', state: 'São Paulo', party: 'Psol', name: 'Samia Bomfim')
+  'candidate', state: 'São Paulo', party: 'PSOL', name: 'Samia Bomfim')
 samia.photo.attach(io: file, filename: "samia.jpg", content_type: "image/jpg")
 samia.save!
 
