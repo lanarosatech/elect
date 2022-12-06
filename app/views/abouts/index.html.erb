@@ -1,0 +1,26 @@
+<%= content_for(:navbar_class, "navbar-home") %>
+<div class="banner-about">
+  <div class="about-us">
+
+    <h3 class="about-title">Who we are?</h3>
+
+    <p class="about-text">
+
+      Elect is a platform focused on the user that is looking for a candidate for congress
+      according to the political spectrum.<br/>
+
+      <%= image_tag "side.png", class: 'img-about'%>
+
+      <br>We provide a quiz with questions of different social and economic subjects in which,
+      according to the answers, the political spectrum will be built and candidates that fit on
+      the ideology will be shown as results, making easier to the user to choose a candidate to vote.
+    </p>
+
+      <%= image_tag "vote.png", class: 'img-about'%>
+  </div>
+
+
+  <div class="home-btn">
+    <p>  <%= link_to "Discover your polical posicional and let's do our country a best place to us!", questions_path, class: "btn btn-lg btn btn-flat" %> </p>
+  </div>
+</div>

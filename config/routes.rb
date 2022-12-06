@@ -3,10 +3,12 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   get "devise/users", to: "users#show"
-
-  resources :searches
   resources :questions
   resources :user_answers
+  resources :searches
+  resources :abouts
+
+  # patch 'questions', to: 'questions#profile_definition'
 
   resources :users do
     collection do

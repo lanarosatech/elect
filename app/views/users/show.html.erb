@@ -4,7 +4,7 @@
     <div class="row wing-info">
         <div class="col-7 wing-description">
           <h2 class="pb-4 pt-1">According to your answers, we understand that...</h2>
-          <h4 class="py-4">You're inclined to left-wing politics!</h4>
+          <h4 class="py-4">You're inclined to <%= current_user.orientation %> politics!</h4>
           <div class="row text-center py-0">
               <div class="col-4 pt-2 pb-2">
                 <i class="fa-solid fa-users fa-3x alig"></i>
@@ -37,7 +37,7 @@
             <h4><li style="color: #000;">Social equality</li></h4>
             <h4><li style="color: #000;">Public safety</li></h4>
           </ol>
-          <a><%= link_to "Check candidates that match your profile", "#", class: "btn btn-flat mb-2 mt-2" %></a>
+          <a><%= link_to "Check candidates that match your profile", top_users_path, class: "btn btn-flat mb-2 mt-2" %></a>
         </div>
         <div class="col-4 mt-5 shadow-lg p-3 mb-5 bg-light rounded-4" style="border: 1px solid black;">
             <div class="class row align-items-center px-4 my-3">

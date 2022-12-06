@@ -14,5 +14,5 @@
           <% end %>
     </div>
   <% end %>
-  <%= link_to "Confirm answers", user_path(current_user), class: "btn btn-primary" %>
+  <%= link_to "Submit answers", user_path(current_user), data: {turbo_method: :patch}, class: "btn btn-primary" %>
 </div>

@@ -1,8 +1,8 @@
 <%= content_for(:navbar_class, "navbar-home") %>
 
-<div class="banner-2-search">
+<div class="banner-search-show">
 
-  <h1 class="title-search-show">Search Candidates Results</h1>
+  <h2 class="title-search-show"> <i class="fa-solid fa-square-poll-horizontal"></i></i> Here is the result of your search <i class="fa-solid fa-square-poll-horizontal"></i></h2>
   <div class="container-search-show">
 
     <%if @search.search_user.empty? %>
@@ -10,23 +10,33 @@
     <%else %>
       <div class="row-search-show">
         <% @search.search_user.each do |user| %>
-          <div class="col-2">
-            <div class="card mt-4" style="width: 9rem;">
-              <img class="img-search-show">
-                <%= image_tag user.photo %>
-              <div class="card-body-search-show">
-                <p class="card-text-search-show"><%= user.name %></p>
-                <p class="card-text-search-show"><%= user.state %></p>
-                <p class="card-text-search-show"><%= user.party %></p>
-                <p class="card-text-search-show"><%= user.role %></p>
+          <% if user.role == "candidate" %>
+            <div class="col-2">
+              <div class="card mt-4" style="width: 9rem;">
+                <img class="img-search-show">
+                  <%= image_tag user.photo %>
+                <div class="card-body-search-show" style="text-align: justify">
+                  <div class="icons-search">
+                    <i class="fa-regular fa-user"></i>
+                    <p class="card-text-search-show"><%= user.name %><br/>
+                  </div>
+                  <div class="icons-search">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p class="card-text-search-show"></i> <%= user.state %><br/>
+                  </div>
+                  <div class="icons-search">
+                    <i class="fa-regular fa-handshake"></i>
+                    <p class="card-text-search-show">  <%= user.party %><br/>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          <% end %>
         <% end %>
       </div>
     <%end %>
-    <div class="container-link">
-    <%= link_to "Click to back to search", new_search_path %>
+    <div class="show-search-btn">
+      <p>  <%= link_to "Click to back to search", searches_path, class: "btn btn-lg btn btn-flat" %> </p>
     </div>
   </div>
 </div>

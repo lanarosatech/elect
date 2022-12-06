@@ -1,22 +1,128 @@
-<div class="master-container pt-1 pb-1" style="background-color: #F2F0EB;">
+<div class="master-container pt-1 pb-1" style="background-color: #cd9046;>
 
   <div class="container mt-5 mb-5">
 
-    <h2 class="text-center my-4">See below all the candidates that match your profile</h2>
+    <h2 class="text-center my-4" style="color: #FFFFFF; font-weight: 500">See who matches your profile!</h2>
+
+
+  <% if current_user.orientation == "left-wing" %>
+    <div class="row-search-show">
+      <% @users.each do |user| %>
+        <% if user.role == "candidate" && user.state == current_user.state && (user.party == "PT" || user.party == "PSOL") %>
+          <div class="col-2">
+            <div class="card mt-4" style="width: 9rem;">
+              <img class="img-search-show">
+                <%= image_tag user.photo %>
+              <div class="card-body-search-show">
+                <p class="card-text-search-show"><%= user.name %><br/>
+                <p class="card-text-search-show"><%= user.state %><br/>
+                <p class="card-text-search-show"><%= user.party %><br/>
+                <p class="card-text-search-show"><%= user.role %><br/>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  <% elsif current_user.orientation == "right-wing" %>
+    <div class="row-search-show">
+      <% @users.each do |user| %>
+        <% if user.role == "candidate" && user.state == current_user.state && (user.party == "Republicanos" || user.party == "PL") %>
+          <div class="col-2">
+            <div class="card mt-4" style="width: 9rem;">
+              <img class="img-search-show">
+                <%= image_tag user.photo %>
+              <div class="card-body-search-show">
+                <p class="card-text-search-show"><%= user.name %><br/>
+                <p class="card-text-search-show"><%= user.state %><br/>
+                <p class="card-text-search-show"><%= user.party %><br/>
+                <p class="card-text-search-show"><%= user.role %><br/>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  <% elsif current_user.orientation == "centrist" %>
+    <div class="row-search-show">
+      <% @users.each do |user| %>
+        <% if user.role == "candidate" && user.state == current_user.state && (user.party == "MDB" || user.party == "PSD") %>
+          <div class="col-2">
+            <div class="card mt-4" style="width: 9rem;">
+              <img class="img-search-show">
+                <%= image_tag user.photo %>
+              <div class="card-body-search-show">
+                <p class="card-text-search-show"><%= user.name %><br/>
+                <p class="card-text-search-show"><%= user.state %><br/>
+                <p class="card-text-search-show"><%= user.party %><br/>
+                <p class="card-text-search-show"><%= user.role %><br/>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  <% else %>
+      <h5 class="text-center mt-5 pt-5 mb-2 pb-2" style="color: #FFFFFF; font-weight: 500">No candidates match your profile so far.</h5>
+      <h5 class="text-center" style="color: #FFFFFF; font-weight: 500">Maybe you could answer the questions and come back to check your results later on.</h5>
+      <div class = "row justify-content-center pt-5">
+        <div class="col-2">
+          <%= link_to "Answer questions", questions_path, class: "btn btn-flat mb-2 mt-2" %>
+        </div>
+      </div>
+  <% end %>
+
+    <div class="row justify-content-end">
+      <div class="col-2">
+        <a><%= link_to "See all candidates", searches_path, class: "btn btn-flat mb-2 mt-2" %></a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 
     <div class="row justify-content-evenly mx-5 my-5">
 
           <div class="col-2">
 
-            <div class="card mt-4" style="width: 9rem;">
+            <div class="card mt-4" style="text-align:center; width: 12rem; height: 32rem">
 
                 <img src="https://www.camara.leg.br/internet/deputado/bandep/204535.jpgmaior.jpg" alt="">
 
               <div class="card-body">
-                <p class="card-text"> Samia Bomfim </p>
-                <p class="card-text"> Rio de Janeiro </p>
-                <p class="card-text"> PSOL </p>
-                <p class="card-text"> Similarities: 89% </p>
+                <p class="card-text"> Samia Bomfim <br/>
+                <p class="card-text"> Rio de Janeiro <br/>
+                <p class="card-text"> PSOL <br/>
               </div>
 
             </div>
@@ -25,7 +131,7 @@
 
           <div class="col-2">
 
-            <div class="card mt-4" style="width: 9rem;">
+            <div class="card mt-4" style="text-align:center; width: 12rem; height: 32rem;">
 
                 <img src='https://www.camara.leg.br/internet/deputado/bandep/204464.jpgmaior.jpg' alt="">
 
@@ -33,7 +139,6 @@
                 <p class="card-text"> Talíria Petrone </p>
                 <p class="card-text"> Rio de Janeiro </p>
                 <p class="card-text"> PSOL </p>
-                <p class="card-text"> Similarities: 78% </p>
               </div>
 
             </div>
@@ -42,7 +147,7 @@
 
           <div class="col-2">
 
-            <div class="card mt-4" style="width: 9rem;">
+            <div class="card mt-4" style="text-align:center; width: 12rem; height: 32rem;">
 
                 <img src="https://www.camara.leg.br/internet/deputado/bandep/73701.jpgmaior.jpg" alt="">
 
@@ -50,7 +155,6 @@
                 <p class="card-text"> Benedita da Silva </p>
                 <p class="card-text"> Rio de Janeiro </p>
                 <p class="card-text"> PT</p>
-                <p class="card-text"> Similarities: 67% </p>
               </div>
 
             </div>
@@ -59,7 +163,7 @@
 
           <div class="col-2">
 
-            <div class="card mt-4" style="width: 9rem;">
+            <div class="card mt-4" style="text-align:center; width: 12rem; height: 32rem;">
 
                 <img src="https://www.camara.leg.br/internet/deputado/bandep/178945.jpgmaior.jpg" alt="">
 
@@ -67,7 +171,6 @@
                 <p class="card-text"> Rosangela Gomes </p>
                 <p class="card-text"> Rio de Janeiro </p>
                 <p class="card-text"> Republicanos </p>
-                <p class="card-text"> Similarities: 56% </p>
               </div>
 
             </div>
@@ -76,7 +179,7 @@
 
           <div class="col-2">
 
-            <div class="card mt-4" style="width: 9rem;">
+            <div class="card mt-4" style="text-align:center; width: 12rem; height: 32rem;">
 
                 <img src="https://www.camara.leg.br/internet/deputado/bandep/204447.jpgmaior.jpg" alt="">
 
@@ -84,7 +187,6 @@
                 <p class="card-text"> Flordelis </p>
                 <p class="card-text"> Rio de Janeiro </p>
                 <p class="card-text"> PSD </p>
-                <p class="card-text"> Similarities: 4% </p>
               </div>
 
             </div>
@@ -93,12 +195,38 @@
 
     </div>
 
-    <div class="row justify-content-end">
-      <div class="col-2">
-        <a><%= link_to "See all candidates", new_search_path, class: "btn btn-flat mb-2 mt-2" %></a>
-      </div>
-    </div>
+-->
 
-  </div>
+<!--
 
-</div>
+# create a similarity variable to add score according to answers ...
+similarity = 0
+
+    user.candidate.user_a
+
+    @user.user_answers.all.each do |user_answer|
+      if user_answer.answer.profile == 'Left'
+        score_left += 1
+      elsif user_answer.answer.profile == 'Right'
+        score_right += 1
+      else
+        score_center += 1
+      end
+    end
+
+
+    if current_user.orientation == "left-wing"
+      show users which are candidates from pt/psol located in the same state
+
+
+    elsif current_user.orientation == "right-wing"
+      show users which are candidates from republicanos/pl located in the same state
+
+
+    else
+      show users which are candidates from mdb/psd located in the same state
+
+
+    end
+
+-->
