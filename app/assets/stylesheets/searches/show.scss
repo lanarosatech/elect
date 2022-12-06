@@ -1,5 +1,5 @@
 .banner-search-show {
-  background: #2F2519;
+  background: #cd9046;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -7,16 +7,16 @@
   justify-content: center;
 
 
-  .title-search-show {
-    font-family: 'Montserrat';
-    text-align: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    padding: 30px;
-    margin-top: 5%;
-    color: #FFFFFF;
-  }
+  // .title-search-show {
+  //   font-family: 'Montserrat';
+  //   text-align: center;
+  //   font-style: normal;
+  //   font-weight: 600;
+  //   font-size: 30px;
+  //   padding: 30px;
+  //   margin-top: 5%;
+  //   color: #FFFFFF;
+  // }
 }
 
 .container-search-show {
@@ -37,22 +37,6 @@
   flex: none;
   width: none;
 }
-
-
-.container-link {
-  padding: 15px;
-  box-sizing: content-box;
-  margin-top: 50px;
-
-  a {
-    font-family: 'Montserrat';
-    text-align: left;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-decoration: none;
-  }
-}
-
 
 // # # # CARDS # # #
 
@@ -84,6 +68,21 @@
     font-size: 15px;
     text-align: center;
     display:contents;
-    color: #4A3F35;
+    color: black;
+  }
+}
+
+// # # RETURN BUTTON ##
+
+.show-search-btn {
+  padding: 15px;
+  box-sizing: content-box;
+
+  a {
+    font-family: 'Montserrat';
+    text-align: left;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
   }
 }

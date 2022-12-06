@@ -2,7 +2,7 @@
 
 <div class="banner-search-show">
 
-  <h2 class="title-search-show">Search Candidates Results</h2>
+  <%# <h2 class="title-search-show">Search Candidates Results</h2> %>
   <div class="container-search-show">
 
     <%if @search.search_user.empty? %>
@@ -27,8 +27,8 @@
         <% end %>
       </div>
     <%end %>
-    <div class="container-link">
-    <%= link_to "Click to back to search", searches_path %>
+    <div class="show-search-btn">
+      <p>  <%= link_to "Click to back to search", searches_path, class: "btn btn-lg btn btn-flat" %> </p>
     </div>
   </div>
 </div>
