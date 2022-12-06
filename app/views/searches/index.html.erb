@@ -24,7 +24,9 @@
           <%= f.select :race, options_for_select(@races), include_blank: true %><br>
       </div>
       <div class="selects-search">
-        <%= f.submit "Search" %>
+        <%= f.button :submit do %>
+          <i class="fas fa-search"></i>
+        <%end %>
       </div>
     <%end %>
   </div>
