@@ -1,7 +1,10 @@
 <div class="container">
- <h4><%= @question.content %></h4>
+
+  <h4><%= @question.content %></h4>
+    <%= image_tag @question.photo %>
   <%= simple_form_for(UserAnswer.new) do |f| %>
-    <%= f.association :answer, as: :radio_buttons, collection: @question.answers.pluck(:content) %>
-    <%= f.submit %>
+    <%= f.association :answer, as: :radio_buttons, collection: @question.answers, label_method: :content, value_method:
+    :id, legend_tag: false %>
+    <%= f.submit 'Next' %>
   <% end %>
 </div>
