@@ -6,7 +6,6 @@ Rails.application.routes.draw do
 
   resources :searches
   resources :questions
-  resources :answers
   resources :user_answers
 
   resources :users do
