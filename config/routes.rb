@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :searches
   resources :abouts
 
-  patch 'questions', to: 'questions#profile_definition'
+  # patch 'questions', to: 'questions#profile_definition'
 
   resources :users do
     collection do

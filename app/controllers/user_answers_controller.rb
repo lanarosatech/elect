@@ -11,6 +11,4 @@ class UserAnswersController < ApplicationController
     @user_answer.save!
     redirect_to questions_path
   end
-
-  
 end
