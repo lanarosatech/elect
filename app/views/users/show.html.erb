@@ -1,8 +1,7 @@
-
-<div class="master-container pt-1 pb-1" style="background-color: #F2F0EB;">
+  <div class="master-container pt-1 pb-1" style="background-color: #F2F0EB;">
   <div class="container mt-5 mb-5">
     <div class="row wing-info">
-        <div class="col-7 wing-description">
+        <div class="col-8 wing-description">
           <h2 class="pb-4 pt-1">According to your answers, we understand that...</h2>
           <h4 class="py-4">You're inclined to <%= current_user.orientation %> politics!</h4>
           <div class="row text-center py-0">
@@ -47,7 +46,7 @@
           <a><%= link_to "Check candidates that match your profile", top_users_path, class: "btn btn-check-candidates" %></a>
         </div>
     <% end  %>
-        <div class="col-4 mt-5 shadow-lg p-3 mb-5 bg-light rounded-4 mx-auto text-center">
+        <%# <div class="col-4 mt-5 shadow-lg p-3 mb-5 bg-light rounded-4 mx-auto text-center">
             <div class="class row align-items-center px-4 my 0">
               <div class="col-12">
                 <h5 class="share-question py-0 my-0">Share your results!</h5>
@@ -78,9 +77,9 @@
               </div>
               <div class="col-4 my-0 py-0">
                 <%= link_to "Copy", "#", class: "btn btn-share-link" %>
-              </div>
-            </div>
-        </div>
-    </div>
+              <%# </div> %>
+            <%# </div> %>
+        <%# </div> %>
+    <%# </div> %>
   </div>
 </div>
