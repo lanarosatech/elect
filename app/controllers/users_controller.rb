@@ -40,6 +40,7 @@ class UsersController < ApplicationController
       user = @user.orientation = 'centrist'
     end
     @user.save!
+    redirect_to user_path(@user.id)
   end
 
   def show

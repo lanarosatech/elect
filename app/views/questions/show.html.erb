@@ -7,4 +7,7 @@
     :id, legend_tag: false %>
     <%= f.submit 'Next' %>
   <% end %>
+  <% if @question.id == 10 %>
+    <%= link_to "Submit answers", user_path(current_user.id), data: {turbo_method: :patch}, class: "btn btn-primary" %>
+  <% end %>
 </div>
