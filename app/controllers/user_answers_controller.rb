@@ -18,6 +18,4 @@ class UserAnswersController < ApplicationController
       render 'questions/1', status: :unprocessable_entity
     end
   end
-
-  
 end
