@@ -1,85 +1,52 @@
-  <%# <div class="master-container pt-1 pb-1" style="background-color: #F2F0EB;"> %>
-  <div class="container mt-5 mb-5">
-    <div class="row wing-info">
-        <div class="col-8 wing-description">
-          <h2 class="pb-4 pt-1">According to your answers, we understand that...</h2>
-          <h4 class="py-4">You're inclined to <%= current_user.orientation %> politics!</h4>
-          <div class="row text-center py-0">
-              <div class="col-4 pt-2 pb-2">
-                <i class="fa-solid fa-users fa-3x alig <%= @users.orientation == "left-wing" ? "" : "d-none"  %>"></i>
-              </div>
-              <div class="col-4 pt-2 pb-2">
-                <i class="fa-solid fa-users fa-3x <%= @users.orientation == "centrist" ? "" : "d-none"  %>"></i>
-              </div>
-              <div class="col-4 pt-2 pb-2">
-                <i class="fa-solid fa-users fa-3x <%= @users.orientation == "right-wing" ? "" : "d-none"  %>"></i>
-              </div>
-          </div>
-          <div class="row position-icons d-flex justify-content-center py-0">
-              <div class="col-4">
-                <h5 class="text-center pt-2">Left-wing</h5>
-              </div>
-              <div class="col-4">
-                <h5 class="text-center pt-2">Center</h5>
-              </div>
-              <div class="col-4">
-                <h5 class="text-center pt-2">Right</h5>
-              </div>
-          </div>
-        </div>
-    </div>
-    <div class="row">
+<div class="container" style="min-width: 100%; min-height: 100%; background-color: #228896; font-weight: 500">
 
-    <% if @users.orientation == "left-wing"%>
-        <div class="col-8 mt-4 pt-4">
-          <h4 style="font-size:17px">Left-wing politics describes the range of political ideologies that support and seek to achieve social equality and egalitarianism, often in opposition to social hierarchy. Left-wing politics typically involve a concern for those in society whom its adherents perceive as disadvantaged relative to others as well as a belief that there are unjustified inequalities that need to be reduced or abolished. Left-wing politics are also associated with popular or state control of major political and economic institutions.</h4>
-          <a><%= link_to "Check candidates that match your profile", top_users_path, class: "btn btn-check-candidates" %></a>
-        </div>
-    <% elsif @users.orientation == "right-wing"%>
-        <div class="col-8 mt-4 pt-4">
-          <h4 style="font-size:17px">Right-wing politics describes the range of political ideologies that view certain social orders and hierarchies as inevitable, natural, normal, or desirable, typically supporting this position on the basis of natural law, economics, authority, property or tradition. Hierarchy and inequality may be seen as natural results of traditional social differences or competition in market economies.</h4>
-          <a><%= link_to "Check candidates that match your profile", top_users_path, class: "btn btn-check-candidates" %></a>
-        </div>
-    <% elsif @users.orientation == "centrist" %>
-        <div class="col-8 mt-4 pt-4">
-          <h4 style="font-size:17px">Centrism is a political outlook or position involving acceptance or support of a balance of social equality and a degree of social hierarchy while opposing political changes that would result in a significant shift of society strongly to the left or the right.</h4>
-          <a><%= link_to "Check candidates that match your profile", top_users_path, class: "btn btn-check-candidates" %></a>
-        </div>
-    <% end  %>
-        <%# <div class="col-4 mt-5 shadow-lg p-3 mb-5 bg-light rounded-4 mx-auto text-center">
-            <div class="class row align-items-center px-4 my 0">
-              <div class="col-12">
-                <h5 class="share-question py-0 my-0">Share your results!</h5>
-              </div>
-            </div>
-            <div class="row align-items-center justify-content-center px-4 my-4">
-              <div class="col-2 me-2">
-                <i class="fa-solid fa-envelope fa-3x" style="color: grey;"></i>
-              </div>
-              <div class="col-2 me-2">
-                <i class="fa-brands fa-square-whatsapp fa-3x" style="color: #39bd00;"></i>
-              </div>
-              <div class="col-2 me-2">
-                <i class="fa-brands fa-square-facebook fa-3x" style="color: #00239F;"></i>
-              </div>
-              <div class="col-2 me-2">
-                <i class="fa-brands fa-square-twitter fa-3x" style="color: #3284FF;"></i>
-              </div>
-            </div>
-            <div class="class row align-items-center px-4 my-4">
-              <div class="col-12 align-items-center">
-                <p class="copy-text my-0 py-0">Copy your profile URL:</p>
-              </div>
-            </div>
-            <div class="row align-items-center px-4 my-3">
-              <div class="col-8 pe-0 mx-auto btn-center">
-                <input type="text" style="width: 100%;" value="localhost:3000/users/2" id="myInput">
-              </div>
-              <div class="col-4 my-0 py-0">
-                <%= link_to "Copy", "#", class: "btn btn-share-link" %>
-              <%# </div> %>
-            <%# </div> %>
-        <%# </div> %>
-    <%# </div> %>
+  <div class="row justify-content-center pt-5">
+      <div class="col-8">
+        <h2 class="py-4 text-center">According to your answers, we understand that...</h2>
+        <h3 class="py-4 text-center">You're inclined to <%= current_user.orientation %> politics!</h3>
+      </div>
   </div>
-<%# </div> %>
+
+  <div class="row justify-content-center my-2">
+    <div class="col-1 pt-4 pb-2" style="text-align: center;">
+      <i class="fa-solid fa-users fa-3x <%= @users.orientation == "left-wing" ? "" : "d-none"  %>"></i>
+    </div>
+    <div class="col-1 pt-4 pb-2" style="text-align: center;">
+      <i class="fa-solid fa-users fa-3x <%= @users.orientation == "centrist" ? "" : "d-none"  %>"></i>
+    </div>
+    <div class="col-1 pt-4 pb-2" style="text-align: center;">
+      <i class="fa-solid fa-users fa-3x <%= @users.orientation == "right-wing" ? "" : "d-none"  %>"></i>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-1 py-2">
+      <h5 class="text-center">Left-wing</h5>
+    </div>
+    <div class="col-1 py-2">
+      <h5 class="text-center">Center</h5>
+    </div>
+    <div class="col-1 py-2">
+      <h5 class="text-center">Right</h5>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-5">
+    <div class="col-6">
+      <% if @users.orientation == "left-wing"%>
+        <h4 class="lh-lg" style="font-size:17px">Left-wing politics describes the range of political ideologies that support and seek to achieve social equality and egalitarianism, often in opposition to social hierarchy. Left-wing politics typically involve a concern for those in society whom its adherents perceive as disadvantaged relative to others as well as a belief that there are unjustified inequalities that need to be reduced or abolished. Left-wing politics are also associated with popular or state control of major political and economic institutions.</h4>
+      <% elsif @users.orientation == "right-wing"%>
+        <h4 class="lh-lg" style="font-size:17px">Right-wing politics describes the range of political ideologies that view certain social orders and hierarchies as inevitable, natural, normal, or desirable, typically supporting this position on the basis of natural law, economics, authority, property or tradition. Hierarchy and inequality may be seen as natural results of traditional social differences or competition in market economies.</h4>
+      <% elsif @users.orientation == "centrist" %>
+        <h4 class="lh-lg" style="font-size:17px">Centrism is a political outlook or position involving acceptance or support of a balance of social equality and a degree of social hierarchy while opposing political changes that would result in a significant shift of society strongly to the left or the right.</h4>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-2">
+    <div class="col-6" style="text-align: center;">
+      <a><%= link_to "Check candidates that match your profile", top_users_path, class: "btn btn-check-candidates" %></a>
+    </div>
+  </div>
+
+</div>
