@@ -10,7 +10,9 @@ class UserAnswersController < ApplicationController
     @user_answer.answer = answer
     if @user_answer.save!
       if @user_answer.answer.question == Question.last
-        # redirect_to user_path(current_user.id)
+        current_user.set_orientation
+        redirect_to user_path(current_user.id)
+
       else
         redirect_to question_path(@user_answer.answer.question.id + 1)
       end
