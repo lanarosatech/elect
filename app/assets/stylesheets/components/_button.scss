@@ -1,11 +1,18 @@
-.btn-flat {
+.btn-share-link {
   color:#d1d1d1;
-  padding: 8px 16px;
   border-radius: 50px;
   background: black;
+  margin-top: 0px;
+
   // transition: background 0.3s ease;
 }
 
+.btn-check-candidates {
+  color:#d1d1d1;
+  border-radius: 50px;
+  background: black;
+  margin-top: 30px;
+}
 // .btn-flat:hover {
 //   box-shadow: 0 4px 8px rgb(64, 78, 79);
 // }

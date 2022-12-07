@@ -10,8 +10,6 @@ class UsersController < ApplicationController
     @user = User.search(params[:search]) # to look for candidates ...
   end
 
-
-
   def show
     @users = User.find(params[:id])
   end

@@ -12,6 +12,7 @@ class UserAnswersController < ApplicationController
       if @user_answer.answer.question == Question.last
         current_user.set_orientation
         redirect_to user_path(current_user.id)
+
       else
         redirect_to question_path(@user_answer.answer.question.id + 1)
       end

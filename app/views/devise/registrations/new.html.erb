@@ -1,60 +1,61 @@
-<div class="container my-5" style="width: 40%;">
-<h2 class="mb-5">Sign up</h2>
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="simple_form_for">
-
-  <div class="form-inputs">
-    <%= f.input :name,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "name" } %>
-    <%= f.input :email,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-    <%= f.input :state,
-                required: true,
-                collection: [ 'Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Distrito Federal',
-                'Espírito Santo', 'Goiás', 'Maranhão', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais',
-                'Pará', 'Paraíba', 'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte',
-                'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocantins' ] %>
-    <div class="role-field my-4">
-      <h4><strong>How would you like to register?</strong></h4>
-      <%= f.input_field :role,
-                        as: :radio_buttons,
-                        collection: [['voter', 'As a voter'], ['candidate', 'As a candidate']],
-                        label_method: :second,
-                        value_method: :first,
-                        required: true %>
+<div class="container pt-4" style="min-width: 100%; min-height: 100%; background-image: linear-gradient(#228896, #FFFFFF)">
+  <div class="container my-5 pt-5" style="width: 40%;">
+  <h2 class="mb-5">Sign up</h2>
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
+    <%= f.error_notification %>
+    <div class="simple_form_for">
+    <div class="form-inputs">
+      <%= f.input :name,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "name" } %>
+      <%= f.input :email,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "email" } %>
+      <%= f.input :state,
+                  required: true,
+                  collection: [ 'Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Distrito Federal',
+                  'Espírito Santo', 'Goiás', 'Maranhão', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais',
+                  'Pará', 'Paraíba', 'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte',
+                  'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocantins' ] %>
+      <div class="role-field my-4">
+        <h4><strong>How would you like to register?</strong></h4>
+        <%= f.input_field :role,
+                          as: :radio_buttons,
+                          collection: [['voter', 'As a voter'], ['candidate', 'As a candidate']],
+                          label_method: :second,
+                          value_method: :first,
+                          required: true %>
+      </div>
+      <%= f.input :party,
+                  hint: "If you're a candidate affiliated to a political party",
+                  autofocus: true,
+                  input_html: { autocomplete: "party" } %>
+      <%= f.input :gender,
+                  hint: "If you're a candidate affiliated to a political party",
+                  collection: [ 'male', 'female' ] %>
+      <%= f.input :race,
+                  hint: "If you're a candidate affiliated to a political party",
+                  collection: [ 'white', 'black', 'indian', 'asian' ] %>
+      <%= f.input :photo,
+                  as: :file %>
+      <%= f.input :password,
+                  required: true,
+                  hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                  input_html: { autocomplete: "new-password" } %>
+      <%= f.input :password_confirmation,
+                  required: true,
+                  input_html: { autocomplete: "new-password" } %>
     </div>
-    <%= f.input :party,
-                hint: "If you're a candidate affiliated to a political party",
-                autofocus: true,
-                input_html: { autocomplete: "party" } %>
-    <%= f.input :gender,
-                hint: "If you're a candidate affiliated to a political party",
-                collection: [ 'male', 'female' ] %>
-    <%= f.input :race,
-                hint: "If you're a candidate affiliated to a political party",
-                collection: [ 'white', 'black', 'indian', 'asian' ] %>
-    <%= f.input :photo, as: :file %>
-    <%= f.input :password,
-                required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
-                required: true,
-                input_html: { autocomplete: "new-password" } %>
-  </div>
-  </div>
+    </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Sign up", class: "btn btn-outline-primary", id:"custom-btn" %>
-  </div>
-<% end %>
+    <div class="form-actions">
+      <%= f.button :submit, "Sign up", class: "btn btn-outline-primary", id:"custom-btn" %>
+    </div>
+  <% end %>
 
-<%= render "devise/shared/links" %>
+  <%= render "devise/shared/links" %>
+  </div>
 </div>

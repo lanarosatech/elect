@@ -1,24 +1,27 @@
-<div class="container my-5" style="width: 40%;">
-<h2 class="mb-5">Login</h2>
+<div class="container pt-4" style="min-width: 100%; min-height: 100%; background-image: linear-gradient(#228896, #FFFFFF)">
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-    <%= f.input :password,
-                required: true,
-                input_html: { autocomplete: "current-password" } %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-  </div>
+  <div class="container my-5" style="width: 40%;">
+  <h2 class="mb-5">Login</h2>
 
-  <div class="form-actions">
-    <div class="button-style">
-      <%= f.button :submit, "Log in", class: "btn btn-outline-primary", id:"custom-btn" %>
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
+    <div class="form-inputs">
+      <%= f.input :email,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "email" } %>
+      <%= f.input :password,
+                  required: true,
+                  input_html: { autocomplete: "current-password" } %>
+      <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
     </div>
-  </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+    <div class="form-actions">
+      <div class="button-style">
+        <%= f.button :submit, "Log in", class: "btn btn-outline-primary", id:"custom-btn" %>
+      </div>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+  </div>
 </div>

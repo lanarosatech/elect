@@ -1,5 +1,5 @@
 .banner-about {
-  background-color: #CD9046;
+  background-color: #228896;
   background-image: url("/assets/hands.jpg");
   padding: 3% 10% 10% 3%;
   background-size: cover;
@@ -22,7 +22,7 @@ img.img-about {
   padding: 20px;
 }
 .about-us {
-  background-color: #FA7D09;
+  background-color: #228896;
   border-radius: 20px;
   opacity: 95%;
   background-size: cover;
@@ -39,4 +39,21 @@ p.about-text {
   font-weight: 300;
   background-color: none;
   text-align: justify;
+}
+
+div.about-btn {
+  padding: 15px;
+  box-sizing: content-box;
+
+  a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;;
+    text-align: left;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 }

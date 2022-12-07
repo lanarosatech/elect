@@ -1,9 +1,6 @@
-<div class="master-container pt-1 pb-1" style="border: 1px solid red; background-color: #cd9046;>
+<div class="container pt-4" style="min-width: 100%; min-height: 100%; background-color: #228896">
 
-  <div class="container mt-5 mb-5">
-
-    <h2 class="text-center my-4" style="color: #FFFFFF; font-weight: 500">See who matches your profile!</h2>
-
+  <h2 class="text-center pt-5" style="font-weight: bold; font-family: 'Montserrat', sans-serif;">See who matches your profile!</h2>
 
   <% if current_user.orientation == "left-wing" %>
     <div class="row-search-show">
@@ -13,11 +10,19 @@
             <div class="card mt-4" style="width: 9rem;">
               <img class="img-search-show">
                 <%= image_tag user.photo %>
-              <div class="card-body-search-show">
-                <p class="card-text-search-show"><%= user.name %><br/>
-                <p class="card-text-search-show"><%= user.state %><br/>
-                <p class="card-text-search-show"><%= user.party %><br/>
-                <p class="card-text-search-show"><%= user.role %><br/>
+              <div class="card-body-search-show" style="text-align: justify">
+                <div class="icons-search">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="card-text-search-show"><%= user.name %><br/>
+                </div>
+                <div class="icons-search">
+                  <i class="fa-solid fa-map-pin"></i>
+                  <p class="card-text-search-show"></i> <%= user.state %><br/>
+                </div>
+                <div class="icons-search">
+                  <i class="fa-regular fa-handshake"></i>
+                  <p class="card-text-search-show">  <%= user.party %><br/>
+                </div>
               </div>
             </div>
           </div>
@@ -32,11 +37,19 @@
             <div class="card mt-4" style="width: 9rem;">
               <img class="img-search-show">
                 <%= image_tag user.photo %>
-              <div class="card-body-search-show">
-                <p class="card-text-search-show"><%= user.name %><br/>
-                <p class="card-text-search-show"><%= user.state %><br/>
-                <p class="card-text-search-show"><%= user.party %><br/>
-                <p class="card-text-search-show"><%= user.role %><br/>
+              <div class="card-body-search-show" style="text-align: justify">
+                <div class="icons-search">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="card-text-search-show"><%= user.name %><br/>
+                </div>
+                <div class="icons-search">
+                  <i class="fa-solid fa-map-pin"></i>
+                  <p class="card-text-search-show"></i> <%= user.state %><br/>
+                </div>
+                <div class="icons-search">
+                  <i class="fa-regular fa-handshake"></i>
+                  <p class="card-text-search-show">  <%= user.party %><br/>
+                </div>
               </div>
             </div>
           </div>
@@ -51,11 +64,19 @@
             <div class="card mt-4" style="width: 9rem;">
               <img class="img-search-show">
                 <%= image_tag user.photo %>
-              <div class="card-body-search-show">
-                <p class="card-text-search-show"><%= user.name %><br/>
-                <p class="card-text-search-show"><%= user.state %><br/>
-                <p class="card-text-search-show"><%= user.party %><br/>
-                <p class="card-text-search-show"><%= user.role %><br/>
+              <div class="card-body-search-show" style="text-align: justify">
+                <div class="icons-search">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="card-text-search-show"><%= user.name %><br/>
+                </div>
+                <div class="icons-search">
+                  <i class="fa-solid fa-map-pin"></i>
+                  <p class="card-text-search-show"></i> <%= user.state %><br/>
+                </div>
+                <div class="icons-search">
+                  <i class="fa-regular fa-handshake"></i>
+                  <p class="card-text-search-show">  <%= user.party %><br/>
+                </div>
               </div>
             </div>
           </div>
@@ -72,161 +93,46 @@
       </div>
   <% end %>
 
-    <div class="row justify-content-end">
-      <div class="col-2">
-        <a><%= link_to "See all candidates", searches_path, class: "btn btn-flat mb-2 mt-2" %></a>
-      </div>
+  <div class="row justify-content-end">
+    <div class="col-2">
+      <a><%= link_to "See all candidates", searches_path, class: "btn btn-flat mb-2 mt-2" %></a>
     </div>
-
   </div>
 
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--
-
-    <div class="row justify-content-evenly mx-5 my-5">
-
-          <div class="col-2">
-
-            <div class="card mt-4" style="text-align:center; width: 12rem; height: 32rem">
-
-                <img src="https://www.camara.leg.br/internet/deputado/bandep/204535.jpgmaior.jpg" alt="">
-
-              <div class="card-body">
-                <p class="card-text"> Samia Bomfim <br/>
-                <p class="card-text"> Rio de Janeiro <br/>
-                <p class="card-text"> PSOL <br/>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-2">
-
-            <div class="card mt-4" style="text-align:center; width: 12rem; height: 32rem;">
-
-                <img src='https://www.camara.leg.br/internet/deputado/bandep/204464.jpgmaior.jpg' alt="">
-
-              <div class="card-body">
-                <p class="card-text"> Talíria Petrone </p>
-                <p class="card-text"> Rio de Janeiro </p>
-                <p class="card-text"> PSOL </p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-2">
-
-            <div class="card mt-4" style="text-align:center; width: 12rem; height: 32rem;">
-
-                <img src="https://www.camara.leg.br/internet/deputado/bandep/73701.jpgmaior.jpg" alt="">
-
-              <div class="card-body">
-                <p class="card-text"> Benedita da Silva </p>
-                <p class="card-text"> Rio de Janeiro </p>
-                <p class="card-text"> PT</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-2">
-
-            <div class="card mt-4" style="text-align:center; width: 12rem; height: 32rem;">
-
-                <img src="https://www.camara.leg.br/internet/deputado/bandep/178945.jpgmaior.jpg" alt="">
-
-              <div class="card-body">
-                <p class="card-text"> Rosangela Gomes </p>
-                <p class="card-text"> Rio de Janeiro </p>
-                <p class="card-text"> Republicanos </p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-2">
-
-            <div class="card mt-4" style="text-align:center; width: 12rem; height: 32rem;">
-
-                <img src="https://www.camara.leg.br/internet/deputado/bandep/204447.jpgmaior.jpg" alt="">
-
-              <div class="card-body">
-                <p class="card-text"> Flordelis </p>
-                <p class="card-text"> Rio de Janeiro </p>
-                <p class="card-text"> PSD </p>
-              </div>
-
-            </div>
-
-          </div>
-
-    </div>
-
--->
-
-<!--
-
-# create a similarity variable to add score according to answers ...
-similarity = 0
-
-    user.candidate.user_a
-
-    @user.user_answers.all.each do |user_answer|
-      if user_answer.answer.profile == 'Left'
-        score_left += 1
-      elsif user_answer.answer.profile == 'Right'
-        score_right += 1
-      else
-        score_center += 1
-      end
-    end
+###############################333
+container
+cards
+.row-search-show {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  border-radius: 30px;
+}
+card
+.card {
+  margin-bottom: 30px;
+}
 
 
-    if current_user.orientation == "left-wing"
-      show users which are candidates from pt/psol located in the same state
-
-
-    elsif current_user.orientation == "right-wing"
-      show users which are candidates from republicanos/pl located in the same state
-
-
-    else
-      show users which are candidates from mdb/psd located in the same state
-
-
-    end
-
--->
+###################################
+row
+.row-search-show {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: initial;
+  margin: 5%;
+}
+.card.mt-4 {
+  border-radius: 15px 15px 15px 15px;
+  border: 0.5px solid #777676;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-sizing: content-box;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  background: #FFFFFF;
