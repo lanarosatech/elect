@@ -1,0 +1,24 @@
+
+
+
+
+
+
+.card-top {
+  border-radius: 15px 15px 15px 15px;
+  border: 0.5px solid #777676;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-sizing: content-box;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  background: #FFFFFF;
+}
+
+.row-top-show {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: initial;
+  margin: 5%;
+}
