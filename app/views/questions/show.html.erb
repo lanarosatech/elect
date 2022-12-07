@@ -1,10 +1,13 @@
-<div class="container">
-
-  <h4><%= @question.content %></h4>
-    <%= image_tag @question.photo %>
-  <%= simple_form_for(UserAnswer.new) do |f| %>
-    <%= f.association :answer, as: :radio_buttons, collection: @question.answers, label_method: :content, value_method:
-    :id, legend_tag: false %>
-    <%= f.submit 'Next' %>
-  <% end %>
+<div class="row justify-content-center" style="background-color: #228896";>
+  <div class="col-12 col-sm-8" style="background-color: #d1d1d1; border: 1px solid #8080804a; margin: 25px; border-radius: 50px;">
+    <div class="question-card">
+      <h3 style="color: #fbfbfd;"><%= @question.content %></h3>
+      <%= image_tag @question.photo %>
+      <%= simple_form_for(UserAnswer.new) do |f| %>
+        <%= f.association :answer, as: :radio_buttons, collection: @question.answers, label_method: :content, value_method:
+                        :id, legend_tag: false %>
+        <%= f.submit 'Next', class: "button-questionary" %>
+      <% end %>
+    </div>
+  </div>
 </div>
