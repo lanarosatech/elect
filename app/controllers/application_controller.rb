@@ -9,4 +9,8 @@ class ApplicationController < ActionController::Base
     # For additional in app/views/devise/registrations/edit.html.erb
     devise_parameter_sanitizer.permit(:account_update, keys: [:name, :party, :role, :gender, :photo, :race, :state])
   end
+
+  def default_url_options
+    { host: "https://electdigital.herokuapp.com" || "localhost:3000" }
+  end
 end

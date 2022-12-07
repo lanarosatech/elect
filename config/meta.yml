@@ -1,0 +1,5 @@
+meta_product_name: "Elect"
+meta_title: "Elect - Who will represent me?"
+meta_description: "This app is here to help you identify who are the best candidates to represent your political beliefs!"
+meta_image: "hands.png" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
