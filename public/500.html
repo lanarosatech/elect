@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
   .rails-default-error-page {
-    background-color: #EFEFEF;
+    background-color: #228896;
     color: #2E2F30;
     text-align: center;
     font-family: arial, sans-serif;
@@ -23,7 +23,7 @@
     border-right-color: #999;
     border-left-color: #999;
     border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
+    border-top: black solid 4px;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     background-color: white;
@@ -33,7 +33,7 @@
 
   .rails-default-error-page h1 {
     font-size: 100%;
-    color: #730E15;
+    color: black;
     line-height: 1.5em;
   }
 
@@ -51,6 +51,10 @@
     color: #666;
     box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
   }
+
+  .error-photo-500 {
+    width: 60%;
+  }
   </style>
 </head>
 
@@ -59,6 +63,7 @@
   <div class="dialog">
     <div>
       <h1>We're sorry, but something went wrong.</h1>
+      <img class="error-photo-500" src='https://i.pinimg.com/736x/63/39/2f/63392fa88244d183777fdb1018e4b602--programming-humor-humor-meme.jpg'>
     </div>
     <p>If you are the application owner check the logs for more information.</p>
   </div>
