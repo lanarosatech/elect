@@ -2,7 +2,7 @@
 
 <div class="banner-search-show">
 
-  <h2 class="title-search-show"> <i class="fa-solid fa-square-poll-horizontal"></i></i> Here is the result of your search <i class="fa-solid fa-square-poll-horizontal"></i></h2>
+  <h2 class="title-search-show"> </i> Here is the result of your search </h2>
   <div class="container-search-show">
 
     <%if @search.search_user.empty? %>
@@ -35,8 +35,10 @@
         <% end %>
       </div>
     <%end %>
-    <div class="show-search-btn">
-      <p>  <%= link_to "Click to back to search", searches_path, class: "btn btn-lg btn btn-flat" %> </p>
+    <div class="row justify-content-end">
+      <div class="col-2">
+        <a><%= link_to "See all candidates", searches_path, class: "btn btn-flat mb-2 mt-2" %></a>
+      </div>
     </div>
   </div>
 </div>
