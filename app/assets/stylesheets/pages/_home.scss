@@ -58,6 +58,12 @@ body {
   min-height: 100vh;
   }
 
+  .page-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    }
+
   .btn-flat {
     margin-top: 85px;
     background: black;

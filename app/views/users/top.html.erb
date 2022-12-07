@@ -1,4 +1,4 @@
-<div class="container pt-4" style="min-width: 100%; min-height: 100%; background-color: #228896">
+<div class="container pt-5" style="min-width: 100%; min-height: 80%; background-color: #228896">
 
   <h2 class="text-center pt-5" style="font-weight: bold; font-family: 'Montserrat', sans-serif;">See who matches your profile!</h2>
 
@@ -93,46 +93,9 @@
       </div>
   <% end %>
 
-  <div class="row justify-content-end">
+  <div class="row justify-content-end pb-4">
     <div class="col-2">
       <a><%= link_to "See all candidates", searches_path, class: "btn btn-flat mb-2 mt-2" %></a>
     </div>
   </div>
-
 </div>
-
-
-<!--
-###############################333
-container
-cards
-.row-search-show {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
-  border-radius: 30px;
-}
-card
-.card {
-  margin-bottom: 30px;
-}
-
-
-###################################
-row
-.row-search-show {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: initial;
-  margin: 5%;
-}
-.card.mt-4 {
-  border-radius: 15px 15px 15px 15px;
-  border: 0.5px solid #777676;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  box-sizing: content-box;
-  width: 300px;
-  height: 300px;
-  padding: 15px;
-  background: #FFFFFF;
