@@ -8,7 +8,6 @@ User.destroy_all
 puts "Database cleaned"
 puts "Creating a user"
 
-
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204364.jpgmaior.jpg')
 eli = User.new(email: 'eli.borges@gmail.com', password: '123456', race: 'white', gender: 'male', role:
   'candidate', state: 'Tocantins', party: 'PL', name: 'Eli Borges')
