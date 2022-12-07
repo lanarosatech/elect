@@ -11,6 +11,6 @@ class ApplicationController < ActionController::Base
   end
 
   def default_url_options
-    { host: "https://electdigital.herokuapp.com" || "localhost:3000" }
+    { host: ENV["DOMAIN"] || "localhost:3000" }
   end
 end
