@@ -1,4 +1,4 @@
-<div class="container pt-5" style="min-width: 100%; min-height: 80%; background-image: linear-gradient(#228896, #FFFFFF)">
+<div class="container pt-5" style="min-width: 100%; min-height: 100%; background-image: linear-gradient(#228896, #FFFFFF)">
 
   <h2 class="text-center pt-5" style="font-weight: bold; font-family: 'Montserrat', sans-serif;">See who matches your profile!</h2>
 
@@ -87,14 +87,14 @@
       <h5 class="text-center mt-5 pt-5 mb-2 pb-2" style="color: black; font-weight: 500">No candidates match your profile so far.</h5>
       <h5 class="text-center" style="color: #black; font-weight: 500">Maybe you could answer the questions and come back to check your results later on.</h5>
       <div class = "row justify-content-center pt-5">
-        <div class="col-2">
+        <div class="col-2" style="text-align: center;">
           <%= link_to "Answer questions", question_path(1), class: "btn btn-flat mb-2 mt-2" %>
         </div>
       </div>
   <% end %>
 
-  <div class="row justify-content-end pb-4">
-    <div class="col-2">
+  <div class="row justify-content-end pt-5 mt-5 pb-5 mb-5">
+    <div class="col-2 mt-5 pt-5" style="text-align: center;">
       <a><%= link_to "See all candidates", searches_path, class: "btn btn-flat mb-2 mt-2" %></a>
     </div>
   </div>
