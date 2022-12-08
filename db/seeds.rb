@@ -279,7 +279,7 @@ gilab.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204545.jpgmaior.jpg')
 alesil = User.new(email: 'ale.silva@gmail.com', password: '123456', race: 'white', gender: 'female', role:
-  'candidate', state: 'Minas Gerais', party: 'Republicanos', name: 'Léo Motta')
+  'candidate', state: 'Minas Gerais', party: 'Republicanos', name: 'Alê Silva')
 alesil.photo.attach(io: file, filename: "alesil.jpg", content_type: "image/jpg")
 alesil.save!
 
