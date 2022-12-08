@@ -26,17 +26,9 @@
   padding-right: 5%;
 }
 
-.row-search-show {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  padding: initial;
-  margin: 5%;
-}
 
-.col-2 {
-  flex: none;
-  // width: auto; # com isso os cards ficam mais juntos e sem mais separados e apenas 6 por linha
+.col-2.search-show {
+  display: inline-table;
 }
 
 // # # # CARDS # # #
