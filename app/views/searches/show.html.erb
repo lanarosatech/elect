@@ -1,6 +1,6 @@
 <%= content_for(:navbar_class, "navbar-home") %>
 
-<div class="banner-search-show">
+<div class="banner-search-show" style="background-image: linear-gradient(#228896, #FFFFFF)">
 
   <h2 class="title-search-show"> </i> Here is the result of your search </h2>
   <div class="container-search-show">
@@ -8,13 +8,13 @@
     <%if @search.search_user.empty? %>
       <p>No candidate were found.</p>
     <%else %>
-      <div class="row-search-show">
+      <div class="row search-show">
         <% @search.search_user.each do |user| %>
           <% if user.role == "candidate" %>
-            <div class="col-2">
+            <div class="col-2 search-show">
               <div class="card mt-4" style="width: 9rem;">
                 <img class="img-search-show">
-                  <%= image_tag user.photo %>
+                  <%= cl_image_tag user.photo.key %>
                 <div class="card-body-search-show" style="text-align: justify">
                   <div class="icons-search">
                     <i class="fa-regular fa-user"></i>
@@ -35,10 +35,7 @@
         <% end %>
       </div>
     <%end %>
-    <div class="row justify-content-end">
-      <div class="col-2">
-        <a><%= link_to "See all candidates", searches_path, class: "btn btn-flat mb-2 mt-2" %></a>
-      </div>
-    </div>
+
+    <a><%= link_to "See all candidates", searches_path, class: "btn btn-flat my-5" %></a>
   </div>
 </div>

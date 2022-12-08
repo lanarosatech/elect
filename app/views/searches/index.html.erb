@@ -1,7 +1,7 @@
 <%= content_for(:navbar_class, "navbar-home") %>
 
 
-<div class="banner-search-index">
+<div class="banner-search-index" style="background-image: linear-gradient(#228896, #FFFFFF)">
 
   <h2 class="title-search-index"></h2>
 
@@ -9,7 +9,7 @@
     <%= form_with model: @search do |f| %>
       <div class="selects">
         <%= f.label :state %>
-          <%= f.select :state, options_for_select(@states), include_blank: true %><br>
+          <%= f.select :state, options_for_select(@states.sort_by(&:first)), include_blank: true %><br>
       </div>
       <div class="selects">
         <%= f.label :party %>
@@ -37,7 +37,7 @@
           <div class="col-2">
             <div class="card mt-4" style="width: 9rem;">
               <img class="img-search-show">
-                <%= image_tag user.photo %>
+                <%= cl_image_tag user.photo.key %>
               <div class="card-body-search-show" style="text-align: justify">
                 <div class="icons-search">
                   <i class="fa-regular fa-user"></i>
