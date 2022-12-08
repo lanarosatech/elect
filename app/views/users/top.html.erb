@@ -84,11 +84,11 @@
       <% end %>
     </div>
   <% else %>
-      <h5 class="text-center mt-5 pt-5 mb-2 pb-2" style="color: #FFFFFF; font-weight: 500">No candidates match your profile so far.</h5>
-      <h5 class="text-center" style="color: #FFFFFF; font-weight: 500">Maybe you could answer the questions and come back to check your results later on.</h5>
+      <h5 class="text-center mt-5 pt-5 mb-2 pb-2" style="color: black; font-weight: 500">No candidates match your profile so far.</h5>
+      <h5 class="text-center" style="color: #black; font-weight: 500">Maybe you could answer the questions and come back to check your results later on.</h5>
       <div class = "row justify-content-center pt-5">
         <div class="col-2">
-          <%= link_to "Answer questions", questions_path, class: "btn btn-flat mb-2 mt-2" %>
+          <%= link_to "Answer questions", question_path(1), class: "btn btn-flat mb-2 mt-2" %>
         </div>
       </div>
   <% end %>
