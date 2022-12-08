@@ -9,7 +9,7 @@
     <%= form_with model: @search do |f| %>
       <div class="selects">
         <%= f.label :state %>
-          <%= f.select :state, options_for_select(@states), include_blank: true %><br>
+          <%= f.select :state, options_for_select(@states.sort_by(&:first)), include_blank: true %><br>
       </div>
       <div class="selects">
         <%= f.label :party %>
