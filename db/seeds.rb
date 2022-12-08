@@ -357,7 +357,7 @@ zev.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/179000.jpgmaior.jpg')
 malan = User.new(email: 'mal.antonio@gmail.com', password: '123456', race: 'white', gender: 'male', role:
-  'candidate', state: 'Minas Gerais', party: 'PL', name: 'Marcelo Alvaro Antônio')
+  'candidate', state: 'Minas Gerais', party: 'PL', name: 'Marcelo Álvaro A.')
 malan.photo.attach(io: file, filename: "malan.jpg", content_type: "image/jpg")
 malan.save!
 
@@ -819,7 +819,7 @@ joseguimaraes.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/143632.jpgmaior.jpg')
 domingosneto = User.new(email: ' domingos.neto@camara.leg.br', password: '123456', race: 'white', gender: 'male', role:
-  'candidate', state: 'Ceará', party: 'PSD', name: 'Denis Bezerra')
+  'candidate', state: 'Ceará', party: 'PSD', name: 'Domingos Neto')
 domingosneto.photo.attach(io: file, filename: "domingosneto.jpg", content_type: "image/jpg")
 domingosneto.save!
 
@@ -1203,7 +1203,7 @@ ppimenta.save!
 
 file = URI.open('https://www.camara.leg.br/internet/deputado/bandep/204407.jpgmaior.jpg')
 fmelchionna = User.new(email: 'dep.fernandamelchionna@camara.leg.br', password: '123456', race: 'white', gender:
-  'female', role: 'candidate', state: 'Rio Grande do Sul', party: 'PSOL', name: 'Fernanda Melchionna')
+  'female', role: 'candidate', state: 'Rio Grande do Sul', party: 'PSOL', name: 'Fernanda Melchiona')
 fmelchionna.photo.attach(io: file, filename: "fmelchionna.jpg", content_type: "image/jpg")
 fmelchionna.save!
 
