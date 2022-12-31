@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="_home.scss">
-  </head>
-  <body>
-    <%= content_for(:navbar_class, "navbar-home") %>
-      <div class="hero">
-          <h1 class="slogan">Match with the candidates that fit your political view!</h1>
-          <div class="home-btn">
-            <p><%= link_to "Get Started", question_path(1), class: "btn btn-lg btn btn-flat" %></p>
-          </div>
-      </div>
-  </body>
-</html>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url(https://res.cloudinary.com/dgjvosgwy/image/upload/v1670508250/development/background-elect_zou6xq.png); background-size: cover;">
+  <div class="container" style="min-width:100%;">
+    <h1 class="my-5">Match with the candidates that fit your political view!</h1>
+    <p class="my-5"><%= link_to "Get Started", question_path(1), class: "btn btn-home" %></p>
+  </div>
+</div>
