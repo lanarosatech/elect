@@ -5,19 +5,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
 
-
-  .title-search-show {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-  'Helvetica Neue', sans-serif;
-    text-align: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    padding: 30px;
-    margin-top: 5%;
-    color: black;
-  }
+.title-search-show {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 30px;
+  margin-top: 5%;
+  color: black;
 }
 
 .container-search-show {
@@ -36,7 +34,7 @@
 .card.mt-4 {
   border-radius: 15px 15px 15px 15px;
   border: 0.5px solid #777676;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   box-sizing: content-box;
   width: 300px;
   height: 300px;
@@ -44,30 +42,30 @@
   background: #FFFFFF;
 }
 
-  .img-search-show{
-    box-sizing: border-box;
-    border-radius: 10px;
-  }
+.img-search-show{
+  box-sizing: border-box;
+  border-radius: 10px;
+}
 
-  .card-body-search-show{
-    margin-top: 15%;
-    width: 100%;
-    height: 100%;
-  }
-  .card-text-search-show {
-    box-sizing: border-box;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    text-align: left;
-    display: contents;
-    color: black;
-  }
+.card-body-search-show{
+  margin: 1rem 0;
+  width: 100%;
+  height: 100%;
+}
+.card-text-search-show {
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: left;
+  display: contents;
+  color: black;
+}
 
-  .icons-search {
-    // padding: 2px;
-    margin-right: 2px;
-  }
+.icons-search {
+  // padding: 2px;
+  margin-right: 2px;
+}
 
 
 // # # RETURN BUTTON ##
