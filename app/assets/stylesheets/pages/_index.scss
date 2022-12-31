@@ -1,2 +1,12 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.page-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+#main-content {
+  background-color: #228896;
+}
