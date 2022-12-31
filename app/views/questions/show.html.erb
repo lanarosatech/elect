@@ -1,18 +1,26 @@
-<div class="container d-flex">
+<div class="container">
+
   <div class="row justify-content-center mt-5">
-    <div class="col-12 mt-4 py-4 px-4" style="background-color: white; border-radius: 20px;">
-      <div class="question-card" style="
-    text-align: center;">
+
+    <div class="question-card col-12 mt-4 py-4 px-4" style="background-color: white; border-radius: 20px;">
+
         <h3 class="text-start"><%= @question.content %></h3>
-        <%= image_tag @question.photo %>
+
+        <%= image_tag @question.photo, class:"question-img my-4"%>
+
         <%= simple_form_for(UserAnswer.new) do |f| %>
+
           <%= f.association :answer, as: :radio_buttons, collection: @question.answers, label_method: :content, value_method:
-                          :id, legend_tag: false, wrapper_html: {class: "myfirstclass"} %>
+                            :id, legend_tag: false, wrapper_html: {class: "myfirstclass"} %>
+
           <div class="d-flex justify-content-end">
             <%= f.submit 'Next', class: "btn btn-next" %>
           </div>
+
         <% end %>
-      </div>
+
     </div>
+
   </div>
+
 </div>
