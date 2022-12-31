@@ -1,6 +1,6 @@
 <div class="container pt-5" style="min-width: 100%; min-height: 100%; background-image: linear-gradient(#228896, #FFFFFF)">
 
-  <h2 class="text-center pt-5" style="font-weight: bold; font-family: 'Montserrat', sans-serif;">See who matches your profile!</h2>
+  <h2 class="text-center pt-3"  >See who matches your profile!</h2>
 
   <% if current_user.orientation == "left-wing" %>
     <div class="row-search-show">
@@ -93,9 +93,9 @@
       </div>
   <% end %>
 
-  <div class="row justify-content-end pt-5 mt-5 pb-5 mb-5">
+  <div class="row justify-content-end mt-5 pb-5 mb-5">
     <div class="col-2 mt-5 pt-5" style="text-align: center;">
-      <a><%= link_to "See all candidates", searches_path, class: "btn btn-flat mb-2 mt-2" %></a>
+      <a><%= link_to "See all candidates", searches_path, class: "btn btn-index mb-2 mt-2" %></a>
     </div>
   </div>
 </div>
