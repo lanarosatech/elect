@@ -1,33 +1,29 @@
 .banner {
   background-size:auto;
   background-position: center;
-  padding: 240px 0;
   height: 84vh;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .banner h1 {
+  width: 100%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
   'Helvetica Neue', sans-serif;
-  color: black;
-  font-size: 30px;
+  color: #fff;
+  text-shadow: 2px 2px #228896;
+  font-size: 3.6rem;
   font-style: normal;
   font-weight: 600;
-  text-align: center;
-  background-color: white;
-  padding-block: 16px;
-  margin-left: 350px;
-  margin-right: 350px;
-  border-radius: 50px;
-  padding-right: 16px;
 }
 
 .banner p {
   color: black;
-  margin-top: 2rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
   'Helvetica Neue', sans-serif;
-  font-size: 18px;
+  font-size: 2rem !important;
   font-style: normal;
   font-weight: 600;
 }
