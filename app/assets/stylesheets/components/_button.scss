@@ -14,6 +14,16 @@
   border-radius: 16px;
 }
 
+.btn-check-candidates {
+  padding: 0.5rem 0.8rem;
+  background: #000;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 16px;
+}
+
+
+
 
 
 
@@ -22,16 +32,4 @@
   border-radius: 50px;
   background: black;
   margin-top: 0px;
-
-  // transition: background 0.3s ease;
 }
-
-.btn-check-candidates {
-  color:#d1d1d1;
-  border-radius: 50px;
-  background: black;
-  margin-top: 30px;
-}
-// .btn-flat:hover {
-//   box-shadow: 0 4px 8px rgb(64, 78, 79);
-// }
