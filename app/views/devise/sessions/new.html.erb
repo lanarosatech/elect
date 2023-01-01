@@ -1,7 +1,7 @@
 <div class="container pt-4 pb-5" style="min-width: 100%; min-height: 100%; background-image: linear-gradient(#228896, #FFFFFF)">
 
   <div class="container mt-5" style="width: 40%;">
-  <h2 class="mb-5">Login</h2>
+  <h1 class="mb-5">Login</h1>
 
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
     <div class="form-inputs">
@@ -17,7 +17,7 @@
 
     <div class="form-actions">
       <div class="button-style">
-        <%= f.button :submit, "Log in", class: "btn btn-outline-primary", id:"custom-btn" %>
+        <%= f.button :submit, "Log in", class: "btn btn-form" %>
       </div>
     </div>
   <% end %>

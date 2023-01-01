@@ -19,10 +19,25 @@
   font-size: 1rem !important;
   border-radius: 4px;
   border: 1px solid #fff;
+  transition: ease-in-out 0.5s;
 }
 
 .btn-signin:hover {
   border: 2px solid #fff;
+}
+
+.btn-form {
+  background-color:black;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: ease-in-out 0.5s;
+}
+
+.btn-form:hover {
+  border: 2px solid #fff;
+  background-color:black;
+  color: white;
 }
 
 .btn.btn-next {
