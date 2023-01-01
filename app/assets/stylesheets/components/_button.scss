@@ -1,9 +1,28 @@
 .btn.btn-home {
-  padding: 1.2rem 1.6rem;
+  padding: 0.6rem 1.2rem;
   background: #000;
   color: #fff;
-  font-size: 1.5rem;
-  border-radius: 32px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  transition: ease-in-out 0.5s;
+}
+
+.btn.btn-home:hover {
+  border: 2px solid #fff;
+}
+
+.btn-signin {
+  padding: 0.5rem 1.2rem !important;
+  background: #000;
+  color: #fff;
+  font-size: 1rem !important;
+  border-radius: 4px;
+  border: 1px solid #fff;
+}
+
+.btn-signin:hover {
+  border: 2px solid #fff;
 }
 
 .btn.btn-next {
@@ -29,9 +48,6 @@
   font-size: 1rem;
   border-radius: 16px;
 }
-
-
-
 
 .btn-share-link {
   color:#d1d1d1;
