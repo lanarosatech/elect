@@ -1,4 +1,5 @@
 .question-card {
+
   img {
     width: 40%;
     margin: 10px;
@@ -35,21 +36,21 @@ padding-left: 0;
   flex: 0 0 30%;
 }
 
-.form-check-input {
-  position: absolute;
-  transform: scale(0);
-}
+// .form-check-input-question {
+//   position: absolute;
+//   transform: scale(0);
+// }
 
-.form-check-input + label {
-  display: block;
-  width: 310px;
-  text-align: center;
-  padding: 5px 5px 5px 5px;
-  border: 1px solid rgba(110, 109, 109, 0.527);
-  border-radius: 50px;
-  background-color: #d1d1d1;
-  cursor: pointer;
-}
+// .form-check-input-question + label {
+//   display: block;
+//   width: 310px;
+//   text-align: center;
+//   padding: 5px 5px 5px 5px;
+//   border: 1px solid rgba(110, 109, 109, 0.527);
+//   border-radius: 50px;
+//   background-color: #d1d1d1;
+//   cursor: pointer;
+// }
 
 .form-check-input:checked + label {
   color: black !important;
@@ -62,3 +63,10 @@ padding-left: 0;
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+// form-check-question
+// form-check-label-question
+// form-check-input-question
